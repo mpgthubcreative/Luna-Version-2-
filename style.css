@@ -19,8 +19,19 @@ body{
 /* Header*/
 
 .container{
-    width: 42.8rem;
+    max-width: 42.8rem;
     margin: 0 auto;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+.top-logo{
+    max-width: 100%;
+    height: 3.5rem;
 }
 
 .cta-link{
@@ -33,6 +44,7 @@ body{
     transition: all 0.3s ease;
     font-size: 1rem;
     letter-spacing: .5px;
+     align-items: center;
 }
 
 .cta-link:hover{
@@ -44,20 +56,25 @@ body{
 
 .hero-container{
     background-color: #18626F;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem 3rem;
+
+.hero-image{
+    width: 100%;
+    height: auto;
+    display: block;
+
 }
+
 
 .hero-textbox{
     color: #fff;
-    width: 42rem;
+    width: 100%;
     padding: 4rem 3rem;
     margin: 0 auto;
+    
 }
 
 .hero-title{
