@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+ 
+}
+
+.confirmation-container {
+    min-width: 40rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Section */
+.confirmation-header {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.confirmation-logo {
+    max-width: 30rem;
+    height: auto;
+}
+
+/* Confirmation Content */
+.confirmation-content {
+    padding: 8rem 6rem;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.confirmation-title {
+    font-size: 4.8rem;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+.confirmation-title .highlight {
+    color: #FF4B00;
+    font-weight: 700;
+}
+
+.confirmation-message {
+    font-size: 1.8rem;
+    color: #333333;
+    line-height: 1.8;
+    margin-bottom: 3.5rem;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.confirmation-thanks {
+    font-size: 1.8rem;
+    color: #333333;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .confirmation-container {
+        max-width: 80rem;
+        min-height: 50vh;
+    }
+    
+    .confirmation-content {
+        padding: 4rem 3rem;
+    }
+    
+    .confirmation-title {
+        font-size: 3.2rem;
+    }
+    
+    .confirmation-message {
+        font-size: 1.6rem;
+        max-width: 42rem;
+    }
+    
+    .confirmation-logo {
+        max-width: 25rem;
+    }
+}
+
+@media (max-width: 428px) {
+    html {
+        font-size: 56%;
+    }
+    
+    body {
+        padding: 0;
+    }
+    
+    .confirmation-container {
+        box-shadow: none;
+    }
+    
+    .confirmation-content {
+        padding: 3rem 2rem;
+    }
+    
+    .confirmation-title {
+        font-size: 2.8rem;
+    }
+    
+    .confirmation-message {
+        font-size: 1.4rem;
+    }
+    
+    .confirmation-thanks {
+        font-size: 1.4rem;
+    }
+    
+    .confirmation-logo {
+        max-width: 20rem;
+    }
+    
+    .confirmation-header {
+        padding: 3rem 0;
+    }
+}
