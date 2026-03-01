@@ -13,21 +13,15 @@ body{
     font-size: 1.6rem;
     line-height: 1.6;
     font-family: 'Inter', sans-serif;
+
 }
 
 /* Header*/
 
 .container{
     width: 42.8rem;
+    margin: 0 auto;
 }
-
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem 3rem;
-}
-
 
 .cta-link{
     text-decoration: none;
@@ -44,4 +38,46 @@ body{
 .cta-link:hover{
     background-color: #000;
     color: #fff;
+}
+
+/* Hero Section */
+
+.hero-container{
+    background-color: #18626F;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+
+.hero-textbox{
+    color: #fff;
+    width: 42rem;
+    padding: 4rem 3rem;
+    margin: 0 auto;
+}
+
+.hero-title{
+    font-size: 2.8rem;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+
+}
+
+.hero-title span{
+    font-weight: 700;
+}
+
+.hero-description{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.hero-subdescription{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
