@@ -197,9 +197,9 @@
                 <p class="form-subtitle">Your high-converting landing page starts here.</p>
 
                 <ul class="form-benefits">
-                    <li><img src="./Desktop and Mobile Assets/checkmark-orange.png" alt="">Conversion-focused landing page starting at ₱20,000</li>
-                    <li><img src="./Desktop and Mobile Assets/checkmark-orange.png" alt="">Includes post-launch support after your page goes live</li>
-                    <li><img src="./Desktop and Mobile Assets/checkmark-orange.png" alt="">We accept limited projects each month to ensure quality</li>
+                    <li class="list-benefits" ><img src="./Desktop and Mobile Assets/checkmark-orange.png" alt="">Conversion-focused landing page starting at ₱20,000</li>
+                    <li class="list-benefits"><img src="./Desktop and Mobile Assets/checkmark-orange.png" alt="">Includes post-launch support after your page goes live</li>
+                    <li class="list-benefits"><img src="./Desktop and Mobile Assets/checkmark-orange.png" alt="">We accept limited projects each month to ensure quality</li>
                 </ul>
             </div>
 
@@ -213,14 +213,15 @@
                     <input type="tel" name="mobile" placeholder="Mobile phone number&#10;+63">
                     <input type="url" name="facebook" placeholder="Facebook Account Link">
                     <input type="text" name="businessType" placeholder="Nature of Business">
-                    <input type="text" name="schedule" placeholder="Preferred Schedule for Discovery chat">
+                    <label class="form-field-label" for="schedule">Preferred Schedule for Discovery chat</label>
                     <div class="date-field">
-                        <input type="text" name="dateTime" placeholder="Date &amp; Time">
+                        <input id="schedule" type="text" name="dateTime" placeholder="Date &amp; Time">
                         <img src="./Desktop and Mobile Assets/date-icon.png" alt="">
                     </div>
                 </div>
 
-                <textarea name="message" placeholder="Message&#10;Type Here"></textarea>
+                <label class="form-field-label" for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type Here"></textarea>
                 <button class="form-submit" type="submit">Start My Project</button>
             </form>
         </div>
