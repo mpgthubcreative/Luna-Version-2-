@@ -86,7 +86,90 @@ max-width: 1600px;
     font-size: .8rem;
 }
 
+/* How It Works Section */
 
+.howitworks-container{
+    max-width: 67rem;
+    margin: 0 auto;
+}
+
+.howitworks-title{
+    font-size: 2.8rem;
+}
+
+.howitworks-grid{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.howitworks-card{
+    padding: 2rem 1.4rem;
+}
+
+.howitworks-card-title{
+    font-size: 1rem;
+}
+
+.howitworks-card-text{
+    font-size: .8rem;
+}
+
+/* Who Is This For Section */
+
+.whoisthisfor-container{
+    margin: 0 auto;
+    grid-template-columns: 1.1fr 1.9fr;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0rem 5rem;
+}
+
+.whoisthisfor-title{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+.whoisthisfor-intro{
+    margin-bottom: .5rem;
+}
+
+
+.whoisthisfor-list{
+    list-style: none;
+    display: grid;
+    gap: 0rem;
+    margin-bottom: .5rem;
+
+}
+
+.whoisthisfor-list li{
+  align-items: center;
+}
+
+
+.whoisthisfor-intro,
+.whoisthisfor-list li,
+.whoisthisfor-outro{
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+.whoisthisfor-note{
+    font-size: .7rem;
+}
+
+.whoisthisfor-textbox{
+    order: 1;
+}
+
+.whoisthisfor-imagebox{
+    order: 2;
+}
+
+.whoisthisfor-image{
+    width: 100%;
+    height: 20rem;
+    display: block;
+    border-radius: 1rem;
+}
 
 
 
@@ -129,6 +212,65 @@ padding: 0rem 5rem;
 .solution-note,
 .solution-body{
     font-size: 1.1rem;
+}
+
+/* How It Works Section */
+
+.howitworks-container{
+    max-width: 85rem;
+}
+
+.howitworks-title{
+    font-size: 3.6rem;
+}
+
+.howitworks-card-title{
+    font-size: 1.4rem;
+}
+
+.howitworks-card-text{
+    font-size: 1.1rem;
+}
+.howitworks-card{
+    height: 185px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+/* Who Is This For Section */
+
+.whoisthisfor-container{
+    width: 100%;
+    grid-template-columns: 1.1fr 1.9fr;
+    align-items: center;
+    gap: 3rem;
+    padding: 0rem 6rem;
+}
+
+.whoisthisfor-title{
+    font-size: 2.4rem;
+    margin-bottom: .8rem;
+}
+
+.whoisthisfor-intro,
+.whoisthisfor-list li,
+.whoisthisfor-note,
+.whoisthisfor-outro{
+    font-size: 1.1rem;
+}
+
+.whoisthisfor-intro,
+.whoisthisfor-list,
+.whoisthisfor-outro{
+    margin-bottom: .8rem;
+}
+
+.whoisthisfor-note{
+    font-size: .9rem;
+}
+
+.whoisthisfor-image{
+    height: 24rem;
 }
 
 
@@ -186,6 +328,74 @@ padding: 0rem 7rem 0rem 9rem;
     font-size: 1.3rem;
 }
 
+/* How It Works Section */
+
+.howitworks-container{
+    max-width: 100rem;
+}
+
+.howitworks-title{
+    font-size: 4.2rem;
+}
+
+.howitworks-grid{
+    gap: 1.4rem;
+}
+
+.howitworks-card{
+    padding: 2.5rem 2rem;
+}
+
+.howitworks-card-title{
+    font-size: 1.8rem;
+}
+
+.howitworks-card-text{
+    font-size: 1.3rem;
+}
+
+.howitworks-card{
+    height: 220px;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+/* Who Is This For Section */
+
+.whoisthisfor-container{
+    width: 100%;
+    grid-template-columns: 1.1fr 1.9fr;
+    align-items: center;
+    gap: 3.5rem;
+    padding: 0rem 7rem;
+}
+
+.whoisthisfor-title{
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.whoisthisfor-intro,
+.whoisthisfor-list li,
+.whoisthisfor-note,
+.whoisthisfor-outro{
+    font-size: 1.2rem;
+}
+
+.whoisthisfor-intro,
+.whoisthisfor-list,
+.whoisthisfor-outro{
+    margin-bottom: 1rem;
+}
+
+.whoisthisfor-note{
+    font-size: 1rem;
+}
+
+.whoisthisfor-image{
+    height: 28rem;
+}
+
     
 }
 
@@ -228,8 +438,105 @@ padding: 0rem 9rem 0rem 11rem;
     font-size: 1.5rem;
 }
 
+/* How It Works Section */
+
+.howitworks-container{
+    max-width: 115rem;
+}
+
+.howitworks-title{
+    font-size: 4.8rem;
+}
+
+.howitworks-card-title{
+    font-size: 2rem;
+}
+
+.howitworks-card-text{
+    font-size: 1.5rem;
+}
+
+.howitworks-card{
+    height: 259px;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+
+/* Who Is This For Section */
+
+.whoisthisfor-container{
+    width: 100%;
+    grid-template-columns: 1.1fr 1.9fr;
+    align-items: center;
+    gap: 4rem;
+    padding: 0rem 8rem;
+}
+
+.whoisthisfor-title{
+    font-size: 3.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.whoisthisfor-intro,
+.whoisthisfor-list li,
+.whoisthisfor-note,
+.whoisthisfor-outro{
+    font-size: 1.3rem;
+}
+
+.whoisthisfor-intro,
+.whoisthisfor-list,
+.whoisthisfor-outro{
+    margin-bottom: 1.2rem;
+}
+
+.whoisthisfor-note{
+    font-size: 1.3rem;
+}
+
+.whoisthisfor-image{
+    height: 32rem;
+}
+
     
 
+
+}
+
+@media (max-width: 767px){
+
+.howitworks-container{
+    padding: 0 2rem;
+}
+
+.howitworks-title{
+    font-size: 3.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.howitworks-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.howitworks-card{
+    padding: 1.8rem 1rem;
+}
+
+.howitworks-icon{
+    width: 44px;
+    height: 44px;
+    margin-bottom: 1rem;
+}
+
+.howitworks-card-title{
+    font-size: 1.3rem;
+}
+
+.howitworks-card-text{
+    font-size: 1rem;
+}
 
 }
 
@@ -277,6 +584,39 @@ padding: 0rem 9rem 0rem 11rem;
 .solution-note,
 .solution-body{
     font-size: 1.2rem;
+}
+
+/* How It Works Section */
+
+.howitworks-section,
+.whoisthisfor-section{
+    padding: 4rem 0;
+}
+
+.howitworks-container,
+.whoisthisfor-container{
+    padding: 0 2rem;
+}
+
+.howitworks-title,
+.whoisthisfor-title{
+    font-size: 2.6rem;
+}
+
+.howitworks-grid{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.howitworks-card-title{
+    font-size: 1.2rem;
+}
+
+.howitworks-card-text,
+.whoisthisfor-intro,
+.whoisthisfor-list li,
+.whoisthisfor-note,
+.whoisthisfor-outro{
+    font-size: 1rem;
 }
 
 
