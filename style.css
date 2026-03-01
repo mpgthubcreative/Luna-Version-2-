@@ -522,12 +522,11 @@ body{
 }
 
 .date-field img{
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1.4rem;
-    height: 1.4rem;
+    display: none;
+}
+
+.date-field input[type="date"]{
+    cursor: pointer;
 }
 
 .lead-form textarea{
