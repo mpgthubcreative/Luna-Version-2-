@@ -98,3 +98,71 @@ body{
     font-size: 1.5rem;
     font-weight: 600;
 }
+
+/* Solution Section */
+
+.solution-section{
+    padding: 5rem 0;
+}
+
+.solution-container{
+    display: grid;
+    gap: 2.5rem;
+    padding: 0 3rem;
+}
+
+.solution-block{
+    display: grid;
+    gap: 2rem;
+}
+
+.solution-image{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+}
+
+.solution-textbox{
+    color: #111;
+}
+
+.solution-heading{
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1.8rem;
+    font-weight: 800;
+}
+
+.solution-body{
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.solution-list{
+    list-style: none;
+    display: grid;
+    gap: .5rem;
+    margin-bottom: 1.2rem;
+}
+
+.solution-list li{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    line-height: 1.45;
+    align-items: center;
+}
+
+.solution-check{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 0.4rem;
+    flex-shrink: 0;
+}
+
+.solution-note{
+    font-size: 1.4rem;
+    font-weight: 700;
+}

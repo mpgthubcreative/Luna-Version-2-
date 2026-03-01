@@ -51,6 +51,41 @@ max-width: 1600px;
     font-size: 1rem;
 }
 
+/* Solution Section  */
+
+.solution-container{
+    gap: 4rem;
+    width: 100%;
+    max-width: 67rem;
+    margin: 0 auto;
+
+}
+
+.solution-block{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.solution-block-fix .solution-imagebox{
+    order: 2;
+}
+
+.solution-block-fix .solution-textbox{
+    order: 1;
+}
+
+.solution-heading{
+    font-size: 2rem;
+}
+
+.solution-list li,
+.solution-note,
+.solution-body{
+    font-size: .8rem;
+}
+
 
 
 
@@ -78,6 +113,22 @@ padding: 0rem 5rem;
 
 .hero-subdescription{
     font-size: 1.6rem;
+}
+
+/* Solution Section  */
+
+.solution-heading{
+    font-size: 2.8rem;
+}
+
+.solution-container{
+    max-width: 85rem;
+}
+
+.solution-list li,
+.solution-note,
+.solution-body{
+    font-size: 1.1rem;
 }
 
 
@@ -119,6 +170,22 @@ padding: 0rem 7rem 0rem 9rem;
     font-size: 1.8rem;
 }
 
+/* Solution Section  */
+
+.solution-container{
+    max-width: 100rem;
+}
+
+.solution-heading{
+    font-size:3.6rem;
+}
+
+.solution-list li,
+.solution-note,
+.solution-body{
+    font-size: 1.3rem;
+}
+
     
 }
 
@@ -143,6 +210,22 @@ padding: 0rem 9rem 0rem 11rem;
 
 .hero-subdescription{
     font-size: 2rem;
+}
+
+/* Solution Section  */
+
+.solution-container{
+    max-width: 115rem;
+}
+
+.solution-heading{
+    font-size: 4.2rem;
+}
+
+.solution-list li,
+.solution-note,
+.solution-body{
+    font-size: 1.5rem;
 }
 
     
@@ -170,6 +253,30 @@ padding: 0rem 9rem 0rem 11rem;
 
 .hero-subdescription{
     font-size: 1.3rem;
+}
+
+.solution-section{
+    padding: 4rem 0;
+}
+
+.solution-container{
+    padding: 0 2rem;
+    gap: 3rem;
+}
+
+.solution-heading{
+    font-size: 2.2rem;
+    margin-bottom: 1.4rem;
+}
+
+.solution-list{
+    gap: 0.5rem;
+}
+
+.solution-list li,
+.solution-note,
+.solution-body{
+    font-size: 1.2rem;
 }
 
 
