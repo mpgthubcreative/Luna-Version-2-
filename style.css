@@ -551,3 +551,7 @@ body{
 .form-submit:hover{
     background-color: #e24400;
 }
+
+.hidden-field{
+    display: none;
+}
