@@ -171,6 +171,120 @@ max-width: 1600px;
     border-radius: 1rem;
 }
 
+/* Projects Section */
+
+.projects-container{
+    max-width: 115rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.projects-title{
+    font-size: 4.2rem;
+}
+
+.projects-subtitle{
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.projects-grid{
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    overflow-x: visible;
+    scroll-snap-type: none;
+}
+
+.project-card-desktop{
+    display: block;
+}
+
+.project-card-title{
+    font-size: 1.5rem;
+}
+
+.project-card-text{
+    font-size: .95rem;
+    padding: 0rem 3rem;
+}
+
+.projects-next{
+    display: none;
+}
+
+
+/* Announcement Section */
+
+.announcement-container{
+    max-width: 115rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.8rem;
+}
+
+.announcement-item{
+    font-size: 1.2rem;
+}
+
+.announcement-item:not(:last-child){
+    margin-bottom: 0;
+}
+
+/* Form Section */
+
+.form-container{
+    max-width: 115rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.form-copy{
+    margin-bottom: 0;
+}
+
+.form-title{
+    font-size: 5.2rem;
+}
+
+.form-subtitle{
+    font-size: 1.5rem;
+}
+
+.form-benefits li{
+    font-size: 1rem;
+}
+
+.lead-form{
+    padding: 2rem;
+}
+
+.form-logo{
+    width: 11rem;
+    margin-bottom: 1.6rem;
+}
+
+.form-grid{
+    grid-template-columns: 1fr 1fr;
+    gap: .8rem;
+}
+
+.date-field{
+    grid-column: 1 / -1;
+}
+
+.lead-form textarea{
+    min-height: 10rem;
+}
+
 
 
 }
@@ -271,6 +385,38 @@ padding: 0rem 5rem;
 
 .whoisthisfor-image{
     height: 24rem;
+}
+
+.projects-title{
+    font-size: 4.8rem;
+}
+
+.projects-subtitle{
+    font-size: 1.6rem;
+}
+
+.project-card-title{
+    font-size: 1.7rem;
+}
+
+.project-card-text,
+.form-benefits li,
+.form-grid input,
+.date-field input,
+.lead-form textarea{
+    font-size: 1.1rem;
+}
+
+.form-title{
+    font-size: 6rem;
+}
+
+.form-subtitle{
+    font-size: 1.8rem;
+}
+
+.form-submit{
+    font-size: 1.4rem;
 }
 
 
@@ -394,6 +540,10 @@ padding: 0rem 7rem 0rem 9rem;
 
 .whoisthisfor-image{
     height: 28rem;
+}
+
+.project-card-text{
+    padding: 0rem 6rem; 
 }
 
     
