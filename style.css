@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header*/
+
+.container{
+    width: 42.8rem;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+
+
+.cta-link{
+    text-decoration: none;
+    background-color: #FF4B00;
+    color: #fff;
+    font-weight: 700;
+    padding: 1.2rem 2.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    letter-spacing: .5px;
+}
+
+.cta-link:hover{
+    background-color: #000;
+    color: #fff;
+}
