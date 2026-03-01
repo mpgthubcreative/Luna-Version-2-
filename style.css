@@ -518,15 +518,25 @@ body{
 }
 
 .date-field{
+    grid-column: 1 / -1;
     position: relative;
+}
+
+.date-field .flatpickr-wrapper{
+    width: 100%;
 }
 
 .date-field img{
     display: none;
 }
 
-.date-field input[type="date"]{
+.date-field input[type="date"],
+.date-field input[type="text"]{
     cursor: pointer;
+}
+
+.flatpickr-calendar{
+    z-index: 9999 !important;
 }
 
 .lead-form textarea{
