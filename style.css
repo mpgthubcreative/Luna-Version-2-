@@ -499,8 +499,8 @@ body{
     grid-column: 1 / -1;
 }
 
-.form-grid input,
-.date-field input,
+.form-grid > input,
+.date-field #schedule,
 .lead-form textarea{
     width: 100%;
     border: 0;
@@ -512,8 +512,8 @@ body{
     padding: 1.2rem;
 }
 
-.form-grid input,
-.date-field input{
+.form-grid > input,
+.date-field #schedule{
     min-height: 4.2rem;
 }
 

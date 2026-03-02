@@ -453,8 +453,8 @@ padding: 0rem 5rem;
 
 .project-card-text,
 .form-benefits li,
-.form-grid input,
-.date-field input,
+.form-grid > input,
+.date-field #schedule,
 .lead-form textarea{
     font-size: 1.1rem;
 }
