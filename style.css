@@ -261,6 +261,15 @@ body{
     font-size: 1.2rem;
 }
 
+.whoisthisfor-list .solution-check{
+    margin-top: 0;
+}
+
+.whoisthisfor-list span{
+    font-weight: 700;
+    color:  #18626F;
+}
+
 .whoisthisfor-note{
     font-size: 1.2rem;
     font-weight: 700;
