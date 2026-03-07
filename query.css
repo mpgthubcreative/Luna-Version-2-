@@ -218,7 +218,8 @@ max-width: 1600px;
     padding: 0rem 3rem;
 }
 
-.projects-next{
+.projects-next,
+.projects-prev{
     display: none;
 }
 
