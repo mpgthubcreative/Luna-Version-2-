@@ -63,43 +63,94 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const isMobileViewport = () => window.matchMedia("(max-width: 767px)").matches;
   const hasAnnouncementOverflow = () => announcementContainer.scrollWidth > announcementContainer.clientWidth + 4;
+  const getAnnouncementItems = () => Array.from(announcementContainer.querySelectorAll(".announcement-item"));
 
-  const scrollAnnouncement = () => {
-    if (!isMobileViewport() || !hasAnnouncementOverflow()) {
+  const ensureAnnouncementLoopClone = () => {
+    if (announcementContainer.querySelector(".announcement-item.is-clone")) {
       return;
     }
 
-    const maxScrollLeft = announcementContainer.scrollWidth - announcementContainer.clientWidth;
-    const atEnd = announcementContainer.scrollLeft >= maxScrollLeft - 4;
-    const step = announcementContainer.clientWidth;
-    const targetLeft = atEnd ? 0 : Math.min(announcementContainer.scrollLeft + step, maxScrollLeft);
+    const firstItem = announcementContainer.querySelector(".announcement-item");
 
-    announcementContainer.scrollTo({ left: targetLeft, behavior: "smooth" });
+    if (!firstItem) {
+      return;
+    }
+
+    const clone = firstItem.cloneNode(true);
+    clone.classList.add("is-clone");
+    clone.setAttribute("aria-hidden", "true");
+    announcementContainer.appendChild(clone);
   };
 
-  let announcementTimer = null;
+  let announcementInterval = null;
   let announcementResumeTimer = null;
+  let announcementResetTimer = null;
+
+  const scrollAnnouncementRight = () => {
+    const items = getAnnouncementItems();
+
+    if (!items.length) {
+      return;
+    }
+
+    const firstItemWidth = items[0].getBoundingClientRect().width;
+
+    if (firstItemWidth <= 0) {
+      return;
+    }
+
+    const currentIndex = Math.floor((announcementContainer.scrollLeft + 1) / firstItemWidth);
+    const nextIndex = currentIndex + 1;
+
+    const cloneIndex = items.length - 1;
+
+    if (nextIndex >= cloneIndex) {
+      // Move right into the cloned first slide.
+      announcementContainer.scrollTo({ left: nextIndex * firstItemWidth, behavior: "smooth" });
+
+      // Then reset instantly to the real first slide (same visual state).
+      if (announcementResetTimer) {
+        clearTimeout(announcementResetTimer);
+      }
+
+      announcementResetTimer = window.setTimeout(() => {
+        announcementContainer.scrollTo({ left: 0, behavior: "auto" });
+        announcementResetTimer = null;
+      }, 700);
+
+      return;
+    }
+
+    announcementContainer.scrollTo({ left: nextIndex * firstItemWidth, behavior: "smooth" });
+  };
 
   const stopAnnouncementAutoScroll = () => {
-    if (announcementTimer) {
-      clearInterval(announcementTimer);
-      announcementTimer = null;
+    if (announcementInterval) {
+      clearInterval(announcementInterval);
+      announcementInterval = null;
     }
 
     if (announcementResumeTimer) {
       clearTimeout(announcementResumeTimer);
       announcementResumeTimer = null;
     }
+
+    if (announcementResetTimer) {
+      clearTimeout(announcementResetTimer);
+      announcementResetTimer = null;
+    }
+
   };
 
   const startAnnouncementAutoScroll = () => {
     stopAnnouncementAutoScroll();
+    ensureAnnouncementLoopClone();
 
     if (!isMobileViewport() || !hasAnnouncementOverflow()) {
       return;
     }
 
-    announcementTimer = setInterval(scrollAnnouncement, 1500);
+    announcementInterval = setInterval(scrollAnnouncementRight, 2000);
   };
 
   const restartAnnouncementAutoScroll = () => {
@@ -111,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     announcementResumeTimer = setTimeout(() => {
       startAnnouncementAutoScroll();
-    }, 4500);
+    }, 2000);
   };
 
   announcementContainer.addEventListener("touchstart", restartAnnouncementAutoScroll, { passive: true });
