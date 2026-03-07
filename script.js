@@ -82,6 +82,17 @@ document.addEventListener("DOMContentLoaded", () => {
     announcementContainer.appendChild(clone);
   };
 
+  const removeAnnouncementLoopClone = () => {
+    const clone = announcementContainer.querySelector(".announcement-item.is-clone");
+
+    if (!clone) {
+      return;
+    }
+
+    clone.remove();
+    announcementContainer.scrollTo({ left: 0, behavior: "auto" });
+  };
+
   let announcementInterval = null;
   let announcementResumeTimer = null;
   let announcementResetTimer = null;
@@ -144,9 +155,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const startAnnouncementAutoScroll = () => {
     stopAnnouncementAutoScroll();
+
+    if (!isMobileViewport()) {
+      removeAnnouncementLoopClone();
+      return;
+    }
+
     ensureAnnouncementLoopClone();
 
-    if (!isMobileViewport() || !hasAnnouncementOverflow()) {
+    if (!hasAnnouncementOverflow()) {
       return;
     }
 

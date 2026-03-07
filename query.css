@@ -249,6 +249,10 @@ max-width: 1600px;
     letter-spacing: 1px;
 }
 
+.announcement-item.is-clone{
+    display: none;
+}
+
 .announcement-item:not(:last-child){
     margin-bottom: 0;
 }
