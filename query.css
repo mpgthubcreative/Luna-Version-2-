@@ -86,6 +86,14 @@ max-width: 1600px;
     font-size: .8rem;
 }
 
+.solution-list li{
+    align-items: center;
+}
+
+.solution-check{
+    margin-top: 0;
+}
+
 /* How It Works Section */
 
 .howitworks-container{
