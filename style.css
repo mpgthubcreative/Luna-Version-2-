@@ -458,13 +458,13 @@ body{
     box-shadow: #0000001a 0px 2px 8px;
     border-radius: .4rem;
     padding: 1rem .8rem;
-    font-size: .9rem;
+    font-size: 1rem;
     line-height: 1.2;
     font-weight: 600;
     display: flex;
     align-items: center;
     gap: 1rem;
-    width: 30rem;
+    width: 31rem;
     justify-content: center;
     text-align: center;
 }
@@ -507,7 +507,22 @@ body{
     grid-column: 1 / -1;
 }
 
+.mobile-input-field{
+    position: relative;
+}
+
+.mobile-input-label{
+    position: absolute;
+    top: .8rem;
+    left: 1.2rem;
+    font-size: .95rem;
+    line-height: 1.2;
+    color: #7a7a7a;
+    pointer-events: none;
+}
+
 .form-grid > input,
+.mobile-input-field input,
 .date-field #schedule,
 .lead-form textarea{
     width: 100%;
@@ -521,8 +536,14 @@ body{
 }
 
 .form-grid > input,
+.mobile-input-field input,
 .date-field #schedule{
     min-height: 4.2rem;
+}
+
+.mobile-input-field input{
+    padding-top: 2.4rem;
+    padding-bottom: .8rem;
 }
 
 .date-field{

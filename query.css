@@ -459,6 +459,7 @@ padding: 0rem 5rem;
 .project-card-text,
 .form-benefits li,
 .form-grid > input,
+.mobile-input-field input,
 .date-field #schedule,
 .lead-form textarea{
     font-size: 1.1rem;
@@ -725,6 +726,26 @@ padding: 0rem 9rem 0rem 11rem;
 
 @media (max-width: 767px){
 
+.form-benefits li.list-benefits{
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+
+  
+
+
+}
+
+
+
+.form-benefits li.list-benefits img{
+    display: block;
+    margin: 0;
+}
+
 .howitworks-container{
     padding: 0 2rem;
 }
@@ -837,6 +858,22 @@ padding: 0rem 9rem 0rem 11rem;
 .whoisthisfor-outro{
     font-size: 1rem;
 }
+
+.form-benefits li{
+    box-shadow: #0000001a 0px 2px 8px;
+    border-radius: .4rem;
+    padding: 1rem .8rem;
+    font-size: .9rem;
+    line-height: 1.2;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 28rem;
+    justify-content: center;
+    text-align: center;
+}
+
 
 
 
