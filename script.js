@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    announcementTimer = setInterval(scrollAnnouncement, 3000);
+    announcementTimer = setInterval(scrollAnnouncement, 1500);
   };
 
   const restartAnnouncementAutoScroll = () => {
