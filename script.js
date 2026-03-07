@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    announcementInterval = setInterval(scrollAnnouncementRight, 2000);
+    announcementInterval = setInterval(scrollAnnouncementRight, 5000);
   };
 
   const restartAnnouncementAutoScroll = () => {
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     announcementResumeTimer = setTimeout(() => {
       startAnnouncementAutoScroll();
-    }, 2000);
+    }, 5000);
   };
 
   announcementContainer.addEventListener("touchstart", restartAnnouncementAutoScroll, { passive: true });
