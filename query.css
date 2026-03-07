@@ -214,7 +214,7 @@ max-width: 1600px;
 }
 
 .project-card-text{
-    font-size: .95rem;
+    font-size: 1.1rem;
     padding: 0rem 3rem;
 }
 
@@ -426,6 +426,10 @@ padding: 0rem 5rem;
     font-size: 1.6rem;
 }
 
+.project-card-text{
+font-size: 1.4rem;
+}
+
 .project-card-title{
     font-size: 1.7rem;
 }
@@ -456,7 +460,6 @@ padding: 0rem 5rem;
 }
 
 
-.project-card-text,
 .form-benefits li,
 .form-grid > input,
 .mobile-input-field input,
@@ -601,6 +604,7 @@ padding: 0rem 7rem 0rem 9rem;
 
 .project-card-text{
     padding: 0rem 6rem; 
+    font-size: 1.4rem;
 }
 .announcement-item{
     font-size: 1.4rem;
@@ -775,7 +779,7 @@ padding: 0rem 9rem 0rem 11rem;
 }
 
 .howitworks-card-text{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 }
