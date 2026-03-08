@@ -227,9 +227,9 @@ max-width: 1600px;
 /* Announcement Section */
 
 .announcement-container{
-    max-width: 115rem;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 1rem 4rem;
+    padding: .6rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,7 +239,7 @@ max-width: 1600px;
 }
 
 .announcement-item{
-    font-size: 1.1rem;
+    font-size: 1rem;
     white-space: nowrap;
     padding: 0;
     width: auto;
@@ -443,9 +443,9 @@ font-size: 1.4rem;
 
 
 .announcement-container{
-    max-width: 130rem;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 1rem 4rem;
+    padding: .7rem 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -455,7 +455,7 @@ font-size: 1.4rem;
 }
 
 .announcement-item{
-    font-size: 1.4rem;
+    font-size: 1rem;
     white-space: nowrap;
     padding: 0;
     width: auto;
@@ -612,7 +612,7 @@ padding: 0rem 7rem 0rem 9rem;
     font-size: 1.4rem;
 }
 .announcement-item{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .list-benefits{

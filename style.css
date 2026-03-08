@@ -402,12 +402,12 @@ body{
 /* Announcement Section */
 
 .announcement-section{
-    background-color: #18626F;
     padding: 1.2rem 0;
 }
 
 .announcement-container{
-    padding: 0;
+    background-color: #18626F;
+    padding: .5rem 0;
     display: flex;
     gap: 0;
     overflow-x: auto;
