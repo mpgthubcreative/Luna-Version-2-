@@ -669,11 +669,13 @@ margin: 0 auto;
     gap: 2.6rem;
 }
 
-.hero-cta .cta-link{
+.cta-link ,
+.cta-link.cta-left, .cta-link.cta-right {
     width: 24rem;
     padding: 1.25rem 3rem;
     font-size: 1rem;
 }
+
 
 .hero-textbox{
 padding: 0rem 9rem 0rem 10rem;
@@ -788,7 +790,7 @@ width: 70rem;
     width: 17.2rem;
     margin-top: 2.2rem;
     padding: 1.16rem 1.35rem;
-    font-size: .92rem;
+    font-size: 1rem;
 }
 
     
