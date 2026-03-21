@@ -290,71 +290,34 @@ max-width: 1600px;
 /* Form Section */
 
 .form-container{
-    max-width: 115rem;
+    max-width: 76rem;
     margin: 0 auto;
     padding: 0 4rem;
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-.form-benefits li{
-    width: 36rem;
-    justify-self: start;
-
-   
-}
-
-.form-copy{
-    margin-bottom: 0;
-    text-align: left;
+    display: block;
 }
 
 .form-title{
-    font-size: 4.4rem;
+    font-size: 3.4rem;
 }
 
 .form-subtitle{
-    font-size: 1.5rem;
-}
-
-.form-benefits li{
-    font-size: 1rem;
-    padding: .5rem .8rem;
+    font-size: 1.25rem;
 }
 
 .lead-form{
-    max-width: none;
-    margin: 0;
-    padding: 2rem;
-}
-
-.form-logo{
-    width: 11rem;
-    margin-bottom: 1.6rem;
+    max-width: 39rem;
+    margin: 0 auto;
+    padding: 2.6rem 2rem 2rem;
 }
 
 .form-grid{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: .8rem;
-}
-
-.date-field{
-    grid-column: 1 / -1;
 }
 
 .lead-form textarea{
     min-height: 10rem;
 }
-
-.list-benefits{
-    padding: 1rem .8rem;
-    height: 3rem;
-   justify-content: center;
-}
-
-
 
 }
 
@@ -495,10 +458,10 @@ font-size: 1.4rem;
 }
 
 
-.form-benefits li,
 .form-grid > input,
 .mobile-input-field input,
-.date-field #schedule,
+.form-block > input,
+.select-field select,
 .lead-form textarea{
     font-size: 1.1rem;
 }

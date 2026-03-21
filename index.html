@@ -194,17 +194,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
     <section id="section-form" class="form">
         <div class="container form-container">
-            <div class="form-copy">
-                <h2 class="form-title">Are you ready to start attracting more clients?</h2>
-                <p class="form-subtitle">Your high-converting landing page starts here.</p>
-
-                <ul class="form-benefits">
-                    <li class="list-benefits" ><img src="./Desktop and Mobile Assets/checkmark-orange.png" alt=""><div class=" list-box"><p></p>Conversion-focused landing page starting at ₱30,000</p></div></li>
-                    <li class="list-benefits"><img src="./Desktop and Mobile Assets/checkmark-orange.png" alt=""><div class=" list-box"><p>Includes post-launch support after your page goes live</p></div></li>
-                    <li class="list-benefits"><img src="./Desktop and Mobile Assets/checkmark-orange.png" alt=""><div class=" list-box"><p>We accept limited projects each month to ensure quality</p></div></li>
-                </ul>
-            </div>
-
             <form id="form" class="lead-form" name="client-conversion-form"
             method="POST"
             netlify
@@ -221,29 +210,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                 </p>
 
-
-
-                <img class="form-logo" src="./Desktop and Mobile Assets/luna-logo.png" alt="Luna Digital">
-
-                <div class="form-grid">
-                    <input type="text" name="firstName" placeholder="First Name" required>
-                    <input type="text" name="lastName" placeholder="Last Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <div class="mobile-input-field">
-                        <span class="mobile-input-label">Mobile phone number</span>
-                        <input id="mobile" type="tel" name="mobile" placeholder="+63" aria-label="Mobile phone number" required>
-                    </div>
-                    <input type="url" name="facebook" placeholder="Facebook Account Link">
-                    <input type="text" name="businessType" placeholder="Nature of Business" required>
-                    <label class="form-field-label" for="schedule">Preferred Schedule for Discovery chat</label>
-                    <div class="date-field">
-                        <input id="schedule" type="text" name="dateTime" placeholder="Date &amp; Time" readonly required>
-                    </div>
+                <div class="form-header">
+                  <h2 class="form-title">Get Your Free Website Audit &amp; Growth Plan</h2>
+                  <p class="form-subtitle">Answer a few quick questions to get your FREE custom plan, whether you have a website or not.</p>
                 </div>
 
-                <label class="form-field-label" for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Type Here"></textarea>
-                <button class="form-submit" type="submit">Build My Website</button>
+                <div class="form-block">
+                  <p class="form-section-title">Contact Details</p>
+                  <div class="form-grid">
+                    <input type="text" name="firstName" placeholder="First Name" aria-label="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" aria-label="Last Name" required>
+                    <input type="email" name="email" placeholder="Email" aria-label="Email" required>
+                    <div class="mobile-input-field">
+                      <span class="mobile-input-label">Mobile phone number</span>
+                      <input id="mobile" type="tel" name="mobile" placeholder="+63" aria-label="Mobile phone number" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-block form-block--questions">
+                  <p class="form-section-title">Tell us a bit about your business so we can tailor your plan.</p>
+
+                  <label class="form-field-label" for="businessType">1. What type of business do you run</label>
+                  <textarea id="businessType" name="businessType" placeholder="Type your answer here." required></textarea>
+
+                  <label class="form-field-label" for="hasWebsite">2. Do you have a website? (Yes / No)</label>
+                  <div class="select-field">
+                    <select id="hasWebsite" name="hasWebsite" required>
+                      <option value="" selected disabled>Select option</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+
+                  <div id="websiteLinkField" class="conditional-field is-hidden" hidden>
+                    <label class="form-field-label" for="websiteLink">If yes, what is your website url link?</label>
+                    <input id="websiteLink" type="url" name="websiteLink" placeholder="Type here.">
+                  </div>
+
+                  <label class="form-field-label" for="mainGoal">3. What is your main goal for a landing page / website page?</label>
+                  <div class="select-field">
+                    <select id="mainGoal" name="mainGoal" required>
+                      <option value="" selected disabled>Select option</option>
+                      <option value="Get more leads">Get more leads (inquiries from potential clients)</option>
+                      <option value="Get more bookings">Get more bookings (appointments or calls)</option>
+                      <option value="Build a professional online presence">Build a professional online presence</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button class="form-submit" type="submit">GET MY FREE AUDIT</button>
             </form>
         </div>
     </section>
