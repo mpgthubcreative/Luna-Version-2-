@@ -74,7 +74,7 @@ body{
     }
 
     .hero-title span{
-        font-weight: 700;
+        font-weight: 900;
 
     }
 
@@ -137,6 +137,9 @@ body{
         overflow: hidden;
     }
 
+    .service-image{
+        display: none;
+    }
     .services-container{
         padding: 0 2rem;
         text-align: center;
@@ -235,7 +238,7 @@ body{
     gap: .45rem;
     font-size: .7rem;
     line-height: 1.25;
-    color: #444;
+    color: #000;
 }
 
 .service-card__list li strong{
