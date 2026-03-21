@@ -132,7 +132,7 @@ body{
     /* Services Section */
 
     .services-section{
-        background-color: #FBFBFD;
+        /* background-color: #FBFBFD; */
         padding: 4rem 0 0;
         overflow: hidden;
     }
@@ -165,7 +165,7 @@ body{
     .services-subtitle{
         font-size: 1.2rem;
         line-height: 1.5;
-        color: #555;
+        color: #000;
         max-width: 32rem;
         margin: 0 auto 2.4rem;
     }
@@ -242,7 +242,7 @@ body{
 }
 
 .service-card__list li strong{
-    color: #111;
+    color: #000;
     display: block;
     font-size: .98rem;
     line-height: 1.15;
@@ -276,23 +276,29 @@ body{
 /* Form Section */
 
 .form-container{
-    padding: 0 2rem;
+    padding: 0rem 2rem;
+   
+}
+
+.form{
+         background-color: #FBFBFD;
+         padding-bottom: 3rem;
 }
 
 .form-title{
-    font-size: 2.9rem;
-    line-height: 1.05;
+    font-size: 2rem;
+    line-height: 1.2;
     font-weight: 800;
     margin-bottom: 1rem;
     text-align: center;
-    letter-spacing: -.03em;
+    
 }
 
 .form-subtitle{
     text-align: center;
-    font-size: 1.18rem;
+    font-size: 1.2rem;
     line-height: 1.45;
-    color: #55504a;
+    color: #000;
 }
 
 .lead-form{
@@ -306,7 +312,10 @@ body{
 }
 
 .form-header{
-    margin-bottom: 2rem;
+    padding: 2rem 0rem;
+
+    margin: 0 auto;
+
 }
 
 .form-grid{
