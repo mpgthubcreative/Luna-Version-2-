@@ -47,6 +47,36 @@ max-width: 1600px;
     margin-bottom: 1.5rem;
 }
 
+.services-grid{
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 78rem;
+    margin: 0 auto 3rem;
+}
+
+.service-card{
+    grid-template-rows: 6.2rem 1fr;
+}
+
+.service-card__title{
+    font-size: 1.5rem;
+    padding: 1.45rem 1.4rem 1.2rem;
+    height: 6.2rem;
+}
+
+.service-card__list{
+    padding: 1.6rem 1.3rem 1.65rem;
+}
+
+.service-card__list li{
+    gap: .55rem;
+    font-size: 1rem;
+}
+
+.service-card__list li strong{
+    font-size: 1.02rem;
+}
+
 .hero-subdescription{
     font-size: 1rem;
 }
