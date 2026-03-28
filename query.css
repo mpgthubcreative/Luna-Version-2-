@@ -40,6 +40,7 @@ max-width: 1600px;
 
 .hero-container{
     grid-template-columns: 1fr 1fr;
+    
 }
 
 .hero-image{
@@ -273,13 +274,13 @@ max-width: 1600px;
 .form-container{
     max-width: 76rem;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 1rem 3rem;
     display: block;
 }
 
 .form-header{
-    max-width: 160rem;
-    margin: 0 auto;
+    width: auto;
+ 
 }
 
 .form-title{
@@ -435,7 +436,7 @@ padding: 0rem 5rem 0rem 6rem;
 
 .form-container{
     max-width: 100rem;
-    padding: 0 4rem;
+    padding: 2rem 4rem;
 }
 
 .form-header{
@@ -537,6 +538,10 @@ padding: 0rem 5rem 0rem 6rem;
     font-size: .9rem;
 }
 
+.hero-container{
+    padding-top: 5rem;
+}
+
 .hero-textbox{
 padding: 0rem 3rem 0rem 3rem;
 width: 56.5rem;
@@ -566,7 +571,7 @@ margin: 0 auto;
 
 .form-container{
     max-width: 160rem;
-    padding: 0 5rem;
+    padding: 2rem 5rem;
 }
 
 .form-header{
@@ -658,7 +663,7 @@ margin: 0 auto;
 
 .services-container{
     max-width: 122rem;
-    padding: 0 7rem;
+    padding: 2rem 7rem;
 }
 
 .service-wrapper{
@@ -709,11 +714,11 @@ width: 70rem;
 
 .form-container{
     max-width: 100%;
-    padding: 0 6rem;
+    padding: 2rem 6rem;
 }
 
 .form-header{
-    max-width: 70rem;
+    width: auto;
     margin: 0 auto 3rem;
 }
 
@@ -723,7 +728,7 @@ width: 70rem;
 }
 
 .form-subtitle{
-    font-size: 1.24rem;
+    font-size: 1.8rem;
 }
 
 .lead-form{
@@ -804,6 +809,7 @@ width: 70rem;
 
 /* Mobile */
 @media (max-width: 376px) {
-  
+    .hero-textbox
+    {padding: 0rem 1rem;}
 
 }

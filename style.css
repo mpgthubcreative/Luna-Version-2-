@@ -28,7 +28,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 3rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+
 }
 .top-logo{
     max-width: 100%;
@@ -39,10 +40,13 @@ body{
 
     /* Hero Section */
 
+
+
     .hero-container{
         display: grid;
         grid-template-columns: 1fr;
-           background-color:#FBFBFD ;
+        background-color:#FBFBFD ;
+        padding-top: 2.5rem;
     }
 
 
@@ -99,8 +103,19 @@ body{
         align-items: center;
     }
 
+    .cta-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    display: block;
+
+    }
+
     .cta-link{
         width: 31.4rem;
+        display: flex;
+        justify-content: center;
+        gap: .6rem;
         text-align: center;
         text-decoration: none;  
         font-weight: 700;
@@ -124,7 +139,7 @@ body{
     }
 
     .cta-right{
-        border: solid 1px #FF4B00;
+        border: solid 1px;
         color:  #FF4B00;
 
     }
@@ -313,7 +328,7 @@ body{
 
 .form-header{
     padding: 2rem 0rem;
-
+    width: 29rem;
     margin: 0 auto;
 
 }
@@ -457,7 +472,7 @@ body{
 }
 
 .form-submit:hover{
-    background-color: #e24400;
+    background-color: #000;
 }
 
 .hidden-field{
