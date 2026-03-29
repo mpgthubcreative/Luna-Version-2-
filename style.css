@@ -159,7 +159,7 @@ body{
         display: none;
     }
     .services-container{
-        padding: 0 2rem;
+        padding: 0 2.5rem;
         text-align: center;
     }
 
@@ -173,6 +173,8 @@ body{
     }
 
     .services-heading{
+        margin: 0 auto;
+        width: 30.5rem;
         font-size: 2rem;
         font-weight: 800;
         line-height: 1.15;
@@ -185,7 +187,25 @@ body{
         line-height: 1.5;
         color: #000;
         max-width: 32rem;
-        margin: 0 auto 2.4rem;
+        margin: 0 auto 1rem;
+        padding: 0rem 1.5rem;
+    }
+
+    .subtext-box{
+        width: 25rem;
+        margin: 0 auto 1rem;
+        line-height: 1;
+    }
+
+    .subtext{
+        font-size: 1rem;
+        font-weight: 600;
+        color: #FF4B00;
+        line-height: 1px;
+        display: inline;
+        background-color: #FDEBDF;
+
+        
     }
 
 /* Hero image with decorative circles */
