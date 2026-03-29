@@ -86,7 +86,7 @@ max-width: 1600px;
 .services-container{
     max-width: 76.8rem;
     margin: 0 auto;
-    padding: 0 4rem;
+    padding: 0 0rem;
 }
 
 .service-wrapper{
@@ -666,7 +666,7 @@ padding: 0rem 5rem 0rem 6rem;
 
 .services-container{
     max-width: 108rem;
-    padding: 0 6rem;
+    padding: 0 2rem;
 }
 
 .service-wrapper{
@@ -811,7 +811,7 @@ margin: 0 auto;
 
 .services-container{
     max-width: 122rem;
-    padding: 2rem 7rem;
+    padding: 0rem 2rem;
 }
 
 .service-wrapper{
