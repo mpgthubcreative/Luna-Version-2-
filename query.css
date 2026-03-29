@@ -21,9 +21,8 @@ max-width: 1600px;
 } */
 
 .cta-box.hero-cta{
-    flex-direction: row;
     padding: 0;
-    gap: 2rem;
+    gap: .5rem;
     justify-content: center;
 }
 
@@ -31,8 +30,8 @@ max-width: 1600px;
     margin-bottom: 0;
 }
 
-.cta-link{
-    width: 13rem;
+.cta-link, .cta-link.cta-right{
+    width: 28rem;
     font-size: .7rem;
     padding: .8rem 2.5rem;
 }
@@ -407,12 +406,15 @@ max-width: 1600px;
 }
 
 .cta-box.hero-cta{
-    gap: 2.2rem;
+    gap: 1rem;
+   
 }
 
-.cta-link{
-    width: 15rem;
-    font-size: .82rem;
+
+
+.cta-link, .cta-link.cta-right{
+    width: 32.5rem;
+    font-size: .9rem;
     padding: 1rem 2.6rem;
 }
 
@@ -530,18 +532,14 @@ padding: 0rem 5rem 0rem 6rem;
     --services-scale: 1.25;
 }
 
-.cta-box.hero-cta{
-    gap: 2.4rem;
-}
-
 .top-logo{
     width: 17rem;
 }
 
-.hero-cta .cta-link{
-    width: 22rem;
-    padding: 1.15rem 2.8rem;
-    font-size: .9rem;
+.cta-link, .cta-link.cta-right{
+    width: 46rem;
+    font-size: 1.1rem;
+    padding: 1rem 2.6rem;
 }
 
 .hero-container{
@@ -681,16 +679,13 @@ margin: 0 auto;
 }
 
 .cta-box.hero-cta{
-    gap: 2.6rem;
+    gap: 1rem;
 }
-
-.cta-link ,
-.cta-link.cta-left, .cta-link.cta-right {
-    width: 24rem;
-    padding: 1.25rem 3rem;
-    font-size: 1rem;
+.cta-link, .cta-link.cta-right{
+    width: 52.5rem;
+    font-size: 1.3rem;
+    padding: 1rem 2.6rem;
 }
-
 
 .hero-textbox{
 padding: 0rem 9rem 0rem 10rem;
