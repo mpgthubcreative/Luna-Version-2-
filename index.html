@@ -167,7 +167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <div class="cta-box">
-          <a class="cta-link cta-left" href="#form">🎁 Get My Free Audit + Suggestions</a>
+          <a class="cta-link cta-left cta-services" href="#form">🎁 Get My Free Audit + Suggestions</a>
         </div>
         </div>
       </div>
@@ -179,75 +179,154 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container form-container">
 
             <div class="form-header">
-                  <h2 class="form-title">Get Your Free Website Audit &amp; Growth Plan</h2>
-                  <p class="form-subtitle">Answer a few quick questions to get your FREE custom plan, whether you have a website or not.</p>
+                  <p class="form-badge">✨ FREE - NO OBLIGATION</p>
+                  <h2 class="form-title">Get Your <span>Free Consultation</span></h2>
+                  <p class="form-subtitle">Answer a few quick questions so we can understand your business and suggest practical improvements tailored to you.</p>
+                  <p class="form-proof"><span class="form-proof-icon">📌</span><span>Everything is structured based on your business, your offer, and how your customers make decisions. <strong>This isn't a one-size-fits-all template.</strong></span></p>
                 </div>
 
-                
-            <form id="form" class="lead-form" name="client-conversion-form"
-            method="POST"
-            netlify
-            data-netlify="true"
-            action="/confirmation.html"
-            netlify-honeypot="bot-field">
+                <div class="form-layout">
+                  <div class="form-benefits-card">
+                    <h3 class="form-benefits-title">Take <span>2 Minutes</span> To Get Clarity &amp; Direction</h3>
+                    <p class="form-benefits-intro">This short form helps us create a custom audit that shows you:</p>
 
-             <input type="hidden" name="form-name" value="client-conversion-form" />
-             <input type="hidden" name="subject" value="New Luna Digital Lead" />
-             <input type="hidden" name="Submission Header" value="New Luna Digital Lead" />
+                    <ul class="form-benefits-list">
+                      <li>
+                        <span class="form-benefit-icon">✓</span>
+                        <div>
+                          <p><strong>What's working (and what's not)</strong></p>
+                          <p>Get a clear breakdown of your website's strengths and gaps.</p>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="form-benefit-icon">✓</span>
+                        <div>
+                          <p><strong>Where you're losing customers</strong></p>
+                          <p>See the exact points that may be costing you inquiries or bookings.</p>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="form-benefit-icon">✓</span>
+                        <div>
+                          <p><strong>What to fix first for fast results</strong></p>
+                          <p>Receive prioritized, actionable suggestions you can use immediately.</p>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="form-benefit-icon">✓</span>
+                        <div>
+                          <p><strong>A personalized growth plan</strong></p>
+                          <p>Get expert recommendations tailored to your business and goals.</p>
+                        </div>
+                      </li>
+                    </ul>
 
-                 <!-- Honeypot field for spam protection -->
-                <p class="hidden-field" hidden aria-hidden="true">
-                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                </p>
-
-              
-
-                <div class="form-block">
-                  <p class="form-section-title">Contact Details</p>
-                  <div class="form-grid">
-                    <input type="text" name="firstName" placeholder="First Name" aria-label="First Name" required>
-                    <input type="text" name="lastName" placeholder="Last Name" aria-label="Last Name" required>
-                    <input type="email" name="email" placeholder="Email" aria-label="Email" required>
-                    <div class="mobile-input-field">
-                      <span class="mobile-input-label">Mobile phone number</span>
-                      <input id="mobile" type="tel" name="mobile" placeholder="+63" aria-label="Mobile phone number" required>
+                    <div class="form-review-card">
+                      <p class="form-review-stars">★★★★★</p>
+                      <p class="form-review-quote">"Their audit showed me why I wasn't getting inquiries and what to fix right away."</p>
+                      <p class="form-review-source">- Verified Client Review</p>
                     </div>
+
+                    <p class="form-benefits-footnote">🍀 No pressure-just clear insights tailored to your business</p>
                   </div>
+
+                  <form id="form" class="lead-form" name="client-conversion-form"
+                  method="POST"
+                  netlify
+                  data-netlify="true"
+                  action="/confirmation.html"
+                  netlify-honeypot="bot-field">
+
+                   <input type="hidden" name="form-name" value="client-conversion-form" />
+                   <input type="hidden" name="subject" value="New Luna Digital Lead" />
+                   <input type="hidden" name="Submission Header" value="New Luna Digital Lead" />
+
+                       <!-- Honeypot field for spam protection -->
+                      <p class="hidden-field" hidden aria-hidden="true">
+                          <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                      </p>
+
+                      <div class="form-step">
+                        <p class="form-step-title"><span class="form-step-number">1</span>Let's start with a few details</p>
+                        <div class="form-grid">
+                          <input type="text" name="firstName" placeholder="First Name" aria-label="First Name" required>
+                          <input type="text" name="lastName" placeholder="Last Name" aria-label="Last Name" required>
+                          <input type="email" name="email" placeholder="Email Address" aria-label="Email Address" required>
+                          <div class="mobile-input-field">
+                            <span class="mobile-input-label">Mobile phone number</span>
+                            <input id="mobile" type="tel" name="mobile" placeholder="+63" aria-label="Mobile phone number" required>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-divider" aria-hidden="true"></div>
+
+                      <div class="form-step form-block--questions">
+                        <p class="form-step-title"><span class="form-step-number">2</span>Help us understand your business</p>
+
+                        <label class="form-field-label" for="businessType">What kind of business do you run, and who are your typical customers?<span class="required-mark">*</span></label>
+                        <input id="businessType" type="text" name="businessType" placeholder="e.g., fitness coach for busy professionals, salon for moms, etc." required>
+
+                        <fieldset class="form-choice-group">
+                          <legend class="form-field-label">Do you currently have a website or landing page?<span class="required-mark">*</span></legend>
+                          <label class="form-choice">
+                            <input type="radio" name="hasWebsite" value="Yes - but I feel it can be improved" required>
+                            <span>Yes - but I feel it can be improved</span>
+                          </label>
+                          <label class="form-choice">
+                            <input type="radio" name="hasWebsite" value="Yes - and I'm not sure if it's working well">
+                            <span>Yes - and I'm not sure if it's working well</span>
+                          </label>
+                          <label class="form-choice">
+                            <input type="radio" name="hasWebsite" value="No - I don't have one yet">
+                            <span>No - I don't have one yet</span>
+                          </label>
+                        </fieldset>
+
+                        <div id="websiteLinkField" class="conditional-field is-hidden" hidden>
+                          <label class="form-field-label" for="websiteLink">If yes, what is your website URL?</label>
+                          <input id="websiteLink" type="url" name="websiteLink" placeholder="https://yourwebsite.com">
+                        </div>
+
+                        <label class="form-field-label" for="mainGoal">What would you like your website to help you achieve right now?<span class="required-mark">*</span></label>
+                        <div class="select-field">
+                          <select id="mainGoal" name="mainGoal" required>
+                            <option value="" selected disabled>Select your main goal...</option>
+                            <option value="Get more leads">Get more leads</option>
+                            <option value="Get more bookings">Get more bookings</option>
+                            <option value="Build trust and credibility">Build trust and credibility</option>
+                            <option value="Launch a new offer">Launch a new offer</option>
+                          </select>
+                        </div>
+
+                        <label class="form-field-label" for="biggestBlocker">What do you feel might be stopping customers from reaching out or booking right now?<span class="required-mark">*</span></label>
+                        <div class="select-field">
+                          <select id="biggestBlocker" name="biggestBlocker" required>
+                            <option value="" selected disabled>e.g., unclear offer, not enough inquiries, low conversions, not sure</option>
+                            <option value="Unclear offer or messaging">Unclear offer or messaging</option>
+                            <option value="Not enough inquiries">Not enough inquiries</option>
+                            <option value="Low conversion rate">Low conversion rate</option>
+                            <option value="No website yet">No website yet</option>
+                            <option value="Not sure">Not sure</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-divider" aria-hidden="true"></div>
+
+                      <div class="form-step form-step--final">
+                        <p class="form-step-title"><span class="form-step-number">3</span>Almost done!</p>
+
+                        <div class="form-summary-box">
+                          <p class="form-summary-title">🎁 Built specifically around your business</p>
+                          <p class="form-summary-copy">We'll personally review your answers and show you exactly where potential clients are slipping away and what to fix first, within 48 hours.</p>
+                        </div>
+
+                        <button class="form-submit" type="submit">🎁 GET MY FREE AUDIT + SUGGESTIONS</button>
+                        <p class="form-security-note">🔒 Your information is secure, private, and never sold.</p>
+                      </div>
+                  </form>
                 </div>
-
-                <div class="form-block form-block--questions">
-                  <p class="form-section-title">Tell us a bit about your business so we can tailor your plan.</p>
-
-                  <label class="form-field-label" for="businessType">1. What type of business do you run</label>
-                  <textarea id="businessType" name="businessType" placeholder="Type your answer here." required></textarea>
-
-                  <label class="form-field-label" for="hasWebsite">2. Do you have a website? (Yes / No)</label>
-                  <div class="select-field">
-                    <select id="hasWebsite" name="hasWebsite" required>
-                      <option value="" selected disabled>Select option</option>
-                      <option value="Yes">Yes</option>
-                      <option value="No">No</option>
-                    </select>
-                  </div>
-
-                  <div id="websiteLinkField" class="conditional-field is-hidden" hidden>
-                    <label class="form-field-label" for="websiteLink">If yes, what is your website url link?</label>
-                    <input id="websiteLink" type="url" name="websiteLink" placeholder="Type here.">
-                  </div>
-
-                  <label class="form-field-label" for="mainGoal">3. What is your main goal for a landing page / website page?</label>
-                  <div class="select-field">
-                    <select id="mainGoal" name="mainGoal" required>
-                      <option value="" selected disabled>Select option</option>
-                      <option value="Get more leads">Get more leads (inquiries from potential clients)</option>
-                      <option value="Get more bookings">Get more bookings (appointments or calls)</option>
-                      <option value="Build a professional online presence">Build a professional online presence</option>
-                    </select>
-                  </div>
-                </div>
-
-                <button class="form-submit" type="submit">GET MY FREE AUDIT</button>
-            </form>
         </div>
     </section>
     

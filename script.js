@@ -61,13 +61,24 @@ function scheduleTrackingLoad() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const hasWebsiteSelect = document.getElementById("hasWebsite");
+  const hasWebsiteRadios = document.querySelectorAll('input[name="hasWebsite"]');
   const websiteLinkField = document.getElementById("websiteLinkField");
   const websiteLinkInput = document.getElementById("websiteLink");
   const messengerLinks = document.querySelectorAll(".js-open-messenger");
 
-  if (hasWebsiteSelect && websiteLinkField && websiteLinkInput) {
+  if ((hasWebsiteSelect || hasWebsiteRadios.length > 0) && websiteLinkField && websiteLinkInput) {
+    const getHasWebsiteValue = () => {
+      if (hasWebsiteSelect) {
+        return hasWebsiteSelect.value;
+      }
+
+      const checkedRadio = Array.from(hasWebsiteRadios).find((radio) => radio.checked);
+      return checkedRadio ? checkedRadio.value : "";
+    };
+
     const toggleWebsiteField = () => {
-      const showWebsiteField = hasWebsiteSelect.value === "Yes";
+      const selectedValue = getHasWebsiteValue();
+      const showWebsiteField = selectedValue.startsWith("Yes");
 
       websiteLinkField.hidden = !showWebsiteField;
       websiteLinkField.classList.toggle("is-hidden", !showWebsiteField);
@@ -78,7 +89,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
 
-    hasWebsiteSelect.addEventListener("change", toggleWebsiteField);
+    if (hasWebsiteSelect) {
+      hasWebsiteSelect.addEventListener("change", toggleWebsiteField);
+    }
+
+    hasWebsiteRadios.forEach((radio) => {
+      radio.addEventListener("change", toggleWebsiteField);
+    });
+
     toggleWebsiteField();
   }
 
