@@ -340,24 +340,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="script.js"></script>
 
     
-<script>
-let formSubmitted = false;
-
-const form = document.getElementById("form");
-
-form.addEventListener("submit", function () {
-  if (formSubmitted) return;
-
-  formSubmitted = true;
-
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-    event: "form_submit"
-  });
-});
-</script>
-
-
     
 </body>
 </html>
