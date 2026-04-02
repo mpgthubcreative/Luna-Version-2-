@@ -340,8 +340,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="script.js"></script>
 
     
-    <script>
-  document.getElementById("form").addEventListener("submit", function () {
+<script>
+let formSubmitted = false;
+
+document.getElementById("form").addEventListener("submit", function () {
+  if (formSubmitted) return;
+
+  formSubmitted = true;
+
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     event: "form_submit"
