@@ -340,7 +340,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="script.js"></script>
 
     
-
+    <script>
+  document.getElementById("form").addEventListener("submit", function () {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "form_submit"
+  });
+});
+</script>
 
 
     
