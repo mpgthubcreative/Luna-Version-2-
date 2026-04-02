@@ -343,7 +343,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 let formSubmitted = false;
 
-document.getElementById("form").addEventListener("submit", function () {
+const form = document.getElementById("form");
+
+form.addEventListener("submit", function () {
   if (formSubmitted) return;
 
   formSubmitted = true;
