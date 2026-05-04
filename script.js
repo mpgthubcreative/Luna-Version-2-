@@ -60,7 +60,7 @@ function scheduleTrackingLoad() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const hasWebsiteSelect = document.getElementById("hasWebsite");
+  const hasWebsiteSelect = document.getElementById("hasLandingPage");
   const hasWebsiteRadios = document.querySelectorAll('input[name="hasWebsite"]');
   const websiteLinkField = document.getElementById("websiteLinkField");
   const websiteLinkInput = document.getElementById("websiteLink");

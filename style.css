@@ -1,4 +1,4 @@
-*{
+﻿*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,38 +11,45 @@ html{
 body{
     font-size: 1.6rem;
     line-height: 1.6;
-    font-family: 'Inter', sans-serif;
-    /* background-color: #EFECE1; */
+    font-family: "Inter", sans-serif;
+   
 }
 
-/* Header*/
-
+/* ── CONTAINER ── */
 .container{
-    max-width: 42.8rem;
+    max-width: 43rem;
     margin: 0 auto;
 }
 
+/* ── HEADER ── */
 .header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 3rem 1.5rem 3rem;
+    padding: 1.5rem 2.4rem;
+    background-color: #fff;
 }
 
 .top-logo{
     display: block;
     width: clamp(9rem, 28vw, 12rem);
-    max-width: 100%;
     height: auto;
 }
 
-/* Hero Section */
+/* ── HERO SECTION ── */
+.hero-section{
+    background-color: #fff;
+}
 
 .hero-container{
     display: grid;
     grid-template-columns: 1fr;
-    background-color:#FBFBFD;
-    padding-top: 2.5rem;
+    padding: 2.5rem 2.4rem 0;
+}
+
+.hero-textbox{
+    order: 1;
+    text-align: center;
 }
 
 .hero-image{
@@ -50,69 +57,49 @@ body{
     height: auto;
     display: block;
     order: 2;
-}
-
-.hero-textbox{
-    color: #000;
-    width: 100%;
-    padding: 0rem 3rem;
-    margin: 0 auto;
+    margin-top: 0;
 }
 
 .hero-title{
-    font-size: 3.5rem;
-    line-height: 1.25;
-    margin-bottom: 2rem;
-    text-align: center;
-    width: 25.8rem;
-    margin: 0 auto;
+    font-size: 3.4rem;
+    line-height: 1.2;
+    margin-bottom: 1.4rem;
+    color: #111;
 }
 
 .hero-title span{
     font-weight: 900;
-}
-
-.hero-description{
-    font-size: 1.5rem;
-    line-height: 1.6;
-    text-align: center;
-    width: 31.4rem;
-    margin: 0 auto;
-}
-
-.hero-description span{
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-
-.cta-box{
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cta-icon{
-    width: 1rem;
-    height: 1rem;
-    flex-shrink: 0;
     display: block;
 }
 
+.hero-description{
+    font-size: 1.35rem;
+    line-height: 1.6;
+    color: #222;
+    margin-bottom: 2rem;
+}
+
+/* CTAs */
+.cta-box{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: .8rem;
+}
+
 .cta-link{
-    width: 31.4rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: .6rem;
     text-align: center;
     text-decoration: none;
-    font-weight: 700;
-    padding: 1.5rem 2.5rem;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    font-weight: 800;
     font-size: 1.2rem;
     letter-spacing: .5px;
-    align-items: center;
+    padding: 1.4rem 2rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
     text-transform: uppercase;
 }
 
@@ -122,220 +109,224 @@ body{
 }
 
 .cta-left{
-    margin-bottom: .7rem;
     background-color: #FF4B00;
     color: #fff;
 }
 
 .cta-right{
-    border: solid 1px;
+    border: 2px solid #FF4B00;
     color: #FF4B00;
+    background-color: transparent;
 }
 
-/* Services Section */
-
-.services-section{
-    /* background-color: #FBFBFD; */
-    padding: 4rem 0 0;
-    overflow: hidden;
+/* Rating row */
+.hero-rating{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 2rem;
+    padding-bottom: 2.5rem;
 }
 
-.service-image{
-    display: none;
+.hero-rating-avatars{
+    display: flex;
+    flex-shrink: 0;
 }
 
-.services-container{
-    padding: 0 2.5rem;
-    text-align: center;
-}
-
-.services-label{
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #FF4B00;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: .8rem;
-}
-
-.services-heading{
-    margin: 0 auto;
-    width: 30.5rem;
-    font-size: 2rem;
-    font-weight: 800;
-    line-height: 1.15;
-    color: #111;
-    margin-bottom: 1.2rem;
-}
-
-.services-subtitle{
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #000;
-    max-width: 32rem;
-    margin: 0 auto 1rem;
-    padding: 0rem 1.5rem;
-}
-
-.subtext-box{
-    width: 25rem;
-    margin: 0 auto 1rem;
-    line-height: 1;
-}
-
-.subtext{
-    font-size: 1rem;
-    font-weight: 600;
-    color: #FF4B00;
-    line-height: 1px;
-    display: inline;
-    background-color: #FDEBDF;
-}
-
-/* Hero image with decorative circles */
-.services-hero-wrapper{
-    position: relative;
-    margin: 0 auto 3rem;
-    max-width: 36rem;
-}
-
-.services-hero-img{
-    width: 100%;
-    height: auto;
+.hero-avatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
     display: block;
-    border-radius: 1rem;
-    position: relative;
-    z-index: 1;
 }
 
-/* Service cards grid */
-.services-grid{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.8rem;
+.hero-avatar + .hero-avatar{
+    margin-left: -1rem;
+}
+
+.hero-rating-info{
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+}
+
+.hero-rating-top{
+    font-size: 1.2rem;
+    line-height: 1.35;
+    color: #111;
+    display: flex;
+    align-items: center;
+}
+
+.hero-stars{
+    color: #FF9500;
+    letter-spacing: .05em;
+    font-size: 2rem;
+}
+
+.hero-rating-bottom{
+    font-size: 1.2rem;
+    line-height: 1.35;
+    color: #333;
+}
+
+/* ── PROCESS SECTION ── */
+.process-section{
+    background-color: #fff;
+    padding: 3.5rem 0 3rem;
+}
+
+.process-container{
+    padding: 0 2.4rem;
+}
+
+.process-tagline{
+    font-size: 1.8rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #111;
     margin-bottom: 3rem;
 }
 
-.service-card{
-    background-color: #fff;
-    border: 1px solid #d9d9d9;
-    border-radius: 1.6rem;
-    padding: 0;
-    overflow: hidden;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
-    text-align: left;
-    display: grid;
-    grid-template-rows: 4.9rem 1fr;
-    height: 100%;
-}
-
-.service-card__title{
-    font-size: 1.2rem;
+.process-tagline span{
+    color: #FF4B00;
     font-weight: 800;
-    color: #111;
-    margin-bottom: 0;
-    line-height: 1.15;
-    text-align: center;
-    padding: 1.25rem 1.2rem 1.1rem;
-    border-bottom: 1px solid #d9d9d9;
-    height: 4.9rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FBFBFD;
 }
 
-.service-card__list{
-    list-style: none;
+.process-grid{
     display: grid;
-    gap: 1.15rem;
-    padding: 1.4rem 1.1rem 1.45rem;
-    align-content: start;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
-.service-card__list li{
-    display: flex;
-    align-items: flex-start;
-    gap: .45rem;
-    font-size: .7rem;
-    line-height: 1.25;
-    color: #000;
-}
-
-.service-card__list li strong{
-    color: #000;
-    display: block;
-    font-size: .98rem;
-    line-height: 1.15;
-    margin-bottom: .18rem;
-}
-
-.list-box{
+/* last card (5th) centered on mobile */
+.process-card:last-child{
+    grid-column: 1 / -1;
+    max-width: 19rem;
+    margin: 0 auto;
     width: 100%;
 }
 
-.list-box p{
-    margin: 0;
+.process-card__img{
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+    margin-bottom: 1rem;
 }
 
-.list-box p + p{
-    margin-top: .18rem;
+.process-card__title{
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: .4rem;
+    text-align: center;
 }
 
-.service-card__list .service-icon{
-    width: .95rem;
-    height: .95rem;
-    flex-shrink: 0;
-    margin-top: .18rem;
+.process-card__desc{
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: #444;
+    text-align: center;
 }
 
-
-.services-section .cta-box{
-    padding: 0 0 0rem;
+/* ── FEATURES SECTION ── */
+.features-section{
+    background-color: #F5F0E8;
+    padding: 3rem 0;
 }
 
-/* Form Section */
+.features-container{
+    padding: 0 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
 
+.feature-item{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.feature-item__title{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #FF4B00;
+    margin-bottom: .5rem;
+}
+
+.feature-item__desc{
+    font-size: 1.3rem;
+    color: #444;
+    line-height: 1.45;
+}
+
+.feature-divider{
+    width: 4rem;
+    height: 1px;
+    background-color: #ccc;
+}
+
+/* ── PITCH SECTION ── */
+.pitch-section{
+    background-color: #fff;
+    padding: 4rem 0;
+}
+
+.pitch-container{
+    padding: 0 2.4rem;
+}
+
+.pitch-text{
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #111;
+}
+
+.pitch-text mark{
+    background-color: #FFD9C4;
+    color: #111;
+    padding: 0 .3rem;
+}
+
+/* ── FORM SECTION ── */
 .form{
-
-    padding: 1rem 0 3.5rem;
+    background-color: #F5F0E8;
+    padding: 3.5rem 0 4rem;
 }
 
 .form-container{
-    max-width: 41.6rem;
-    padding: 0 1.6rem 3.2rem;
+    padding: 0 1.6rem;
 }
 
 .form-header{
-    padding: .9rem 0 1.7rem;
-    margin: 0 auto;
     text-align: center;
+    margin-bottom: 2.5rem;
 }
 
 .form-badge{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: .42rem 1rem;
-    border: 1px solid rgba(255, 75, 0, 0.45);
+    display: inline-block;
+    padding: .5rem 1.4rem;
+    border: 1px solid rgba(255, 75, 0, 0.5);
     border-radius: 999px;
     color: #FF4B00;
-    background-color: #fff;
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: .04em;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-   
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+    margin-bottom: 1.6rem;
 }
 
 .form-title{
-    font-size: 2rem;
-    line-height: 1.13;
+    font-size: 2.2rem;
+    line-height: 1.2;
     font-weight: 800;
-    margin-bottom: .9rem;
-    text-align: center;
     color: #111;
+    margin-bottom: .8rem;
 }
 
 .form-title span{
@@ -343,57 +334,33 @@ body{
 }
 
 .form-subtitle{
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #000;
-    width: 35.2rem;
+    font-size: 1.3rem;
+    line-height: 1.55;
+    color: #333;
+    max-width: 36rem;
     margin: 0 auto;
-}
-
-.form-proof{
-    display: flex;
-    align-items: flex-start;
-    gap: .1rem;
-    max-width: 32.2rem;
-    margin: 1.2rem auto 0;
-    padding: .8rem 0rem;
-    background-color: #eaf2ff;
-    border: 1px solid #b8cdf6;
-    border-radius: .45rem;
-    font-size: .86rem;
-    line-height: 1.35;
-    text-align: center;
-    color: #23304d;
-}
-
-.form-proof-icon{
-    flex-shrink: 0;
 }
 
 .form-layout{
     display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 2.2rem;
-    justify-items: center;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
+/* Benefits card */
 .form-benefits-card{
     background: linear-gradient(180deg, #fff7ef 0%, #fff1e6 100%);
     border: 1px solid #f0dfd0;
-    border-radius: 1.7rem;
-    padding: 2rem 1.8rem 1.85rem;
-    box-shadow: 0 10px 30px rgba(41, 34, 23, 0.08);
-    width: 100%;
-    max-width: 36rem;
+    border-radius: 1.6rem;
+    padding: 2rem 1.8rem 1.8rem;
+    box-shadow: 0 8px 24px rgba(41, 34, 23, 0.07);
 }
 
 .form-benefits-title{
-    font-size: 2.05rem;
-    line-height: 1.15;
+    font-size: 2rem;
+    line-height: 1.2;
     color: #111;
-    margin-bottom: 1.1rem;
-    max-width: 26rem;
+    margin-bottom: 1rem;
 }
 
 .form-benefits-title span{
@@ -401,30 +368,24 @@ body{
 }
 
 .form-benefits-intro{
-    font-size: 1.25rem;
-    line-height: 1.45;
+    font-size: 1.2rem;
+    line-height: 1.5;
     color: #3b3b3b;
-    margin-bottom: 1.45rem;
-    max-width: 24rem;
+    margin-bottom: 1.4rem;
 }
 
 .form-benefits-list{
     list-style: none;
     display: grid;
-    gap: 1.15rem;
-    margin-bottom: 1.5rem;
+    gap: 1.1rem;
+    margin-bottom: 2rem;
 }
 
 .form-benefits-list li{
     display: grid;
     grid-template-columns: 1.8rem 1fr;
-    gap: .8rem;
+    gap: .7rem;
     align-items: start;
-}
-
-.form-benefits-list li > div{
-    display: grid;
-    gap: .25rem;
 }
 
 .form-benefit-icon{
@@ -438,79 +399,80 @@ body{
     color: #fff;
     font-size: 1rem;
     font-weight: 700;
-    line-height: 1;
-    margin-top: .22rem;
-    align-self: start;
+    flex-shrink: 0;
+    margin-top: .2rem;
 }
 
 .form-benefits-list p{
     margin: 0;
+    font-size: 1.15rem;
 }
 
 .form-benefits-list p + p{
-    margin-top: .25rem;
-    font-size: 1.05rem;
-    line-height: 1.4;
+    margin-top: .2rem;
+    font-size: 1rem;
     color: #565656;
 }
 
 .form-benefits-list strong{
     display: block;
-    font-size: 1.28rem;
-    line-height: 1.35;
+    font-size: 1.2rem;
     color: #111;
 }
 
-.form-review-card{
+/* Testimonials */
+.testimonials-list{
+    display: grid;
+    gap: 1.2rem;
+}
+
+.testimonial-card{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
     background-color: #fff;
     border: 1px solid #e2d8cf;
     border-radius: 1rem;
-    padding: 1.15rem 1rem 1rem;
-    text-align: center;
-    box-shadow: 0 6px 18px rgba(62, 42, 14, 0.08);
-    max-width: 19rem;
-    margin: 0 auto;
+    padding: 1.2rem 1.2rem;
+    box-shadow: 0 4px 14px rgba(62, 42, 14, 0.06);
 }
 
-.form-review-stars{
+.testimonial-avatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.testimonial-stars{
     color: #FF4B00;
-    letter-spacing: .2em;
-    margin-bottom: .35rem;
-    font-size: 1rem;
+    font-size: .95rem;
+    letter-spacing: .1em;
+    margin-bottom: .3rem;
 }
 
-.form-review-quote{
-    font-size: 1.15rem;
-    line-height: 1.4;
+.testimonial-quote{
+    font-size: 1.1rem;
+    line-height: 1.45;
     color: #1f1f1f;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 600;
 }
 
-.form-review-source{
-    margin-top: .35rem;
-    font-size: .82rem;
+.testimonial-name{
+    margin-top: .3rem;
+    font-size: .9rem;
     color: #6a6a6a;
 }
 
-.form-benefits-footnote{
-    margin-top: .8rem;
-    text-align: center;
-    font-size: .78rem;
-    line-height: 1.35;
-    color: #7e745d;
-}
-
+/* Lead Form */
 .lead-form{
     background-color: #fff;
     border: 1px solid #e7e0d7;
-    border-radius: 1.7rem;
-    margin: 0 auto;
-    padding: 1.65rem 1.35rem 1.55rem;
-    box-shadow: 0 10px 30px rgba(41, 34, 23, 0.06);
-    width: 100%;
-    max-width: 36rem;
-    overflow: hidden;
+    border-radius: 1.6rem;
+    padding: 1.8rem 1.4rem 1.6rem;
+    box-shadow: 0 8px 24px rgba(41, 34, 23, 0.06);
 }
 
 .form-step + .form-step{
@@ -521,8 +483,7 @@ body{
     display: flex;
     align-items: center;
     gap: .8rem;
-    font-size: 1.65rem;
-    line-height: 1.3;
+    font-size: 1.6rem;
     font-weight: 800;
     color: #111;
     margin-bottom: 1.2rem;
@@ -545,22 +506,22 @@ body{
 .form-divider{
     height: 1px;
     background-color: #e7e2db;
-    margin: 1.45rem 0;
+    margin: 1.4rem 0;
 }
 
 .form-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: .7rem;
 }
 
 .form-field-label{
     display: block;
-    font-size: 1.22rem;
-    line-height: 1.45;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #111;
-    margin: 0 0 .65rem;
+    margin: 0 0 .6rem;
+    line-height: 1.4;
 }
 
 .required-mark{
@@ -586,7 +547,6 @@ body{
 .form-step > input,
 .conditional-field input,
 .select-field select,
-.form-choice,
 .lead-form textarea{
     width: 100%;
     border: 1px solid #ddd5cb;
@@ -643,39 +603,8 @@ body{
     cursor: pointer;
 }
 
-.form-choice-group{
-    border: 0;
-    padding: 0;
-    margin: 1.5rem 0 0;
-}
-
-.form-choice-group legend{
-    padding: 0;
-}
-
-.form-choice{
-    display: flex;
-    align-items: center;
-    gap: .65rem;
-    min-height: 3.8rem;
-    padding: .86rem 1.05rem;
-    font-size: 1rem;
-    line-height: 1.4;
-    color: #111;
-    cursor: pointer;
-}
-
-.form-choice + .form-choice{
-    margin-top: .55rem;
-}
-
-.form-choice input{
-    margin: 0;
-    flex-shrink: 0;
-}
-
 .conditional-field{
-    margin-top: 1.1rem;
+    margin-top: 1rem;
 }
 
 .conditional-field.is-hidden{
@@ -684,13 +613,8 @@ body{
 
 .form-block--questions > .form-field-label:not(:first-of-type),
 .form-block--questions > .conditional-field + .form-field-label,
-.form-block--questions > .select-field + .form-field-label,
-.form-block--questions > .form-choice-group + .form-field-label{
-    margin-top: 1.25rem;
-}
-
-.conditional-field .form-field-label{
-    margin-bottom: .7rem;
+.form-block--questions > .select-field + .form-field-label{
+    margin-top: 1.2rem;
 }
 
 .form-summary-box{
@@ -699,14 +623,14 @@ body{
     border-radius: .45rem;
     padding: .95rem 1rem .9rem;
     color: #1f2f4f;
+    margin-bottom: 0;
 }
 
 .form-summary-title{
-    font-size: 1.28rem;
-    line-height: 1.3;
+    font-size: 1.25rem;
     font-weight: 800;
     color: #111;
-    margin-bottom: .35rem;
+    margin-bottom: .3rem;
 }
 
 .form-summary-copy{
@@ -728,6 +652,7 @@ body{
     cursor: pointer;
     margin-top: 1.1rem;
     transition: all 0.3s ease;
+    font-family: inherit;
 }
 
 .form-submit:hover{
