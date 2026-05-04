@@ -72,8 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { passive: true });
   }
 
-  const hasWebsiteSelect = document.getElementById("hasLandingPage");
-  const hasWebsiteRadios = document.querySelectorAll('input[name="hasWebsite"]');
+  const hasWebsiteSelect = null;
+  const hasWebsiteRadios = document.querySelectorAll('input[name="hasLandingPage"]');
   const websiteLinkField = document.getElementById("websiteLinkField");
   const websiteLinkInput = document.getElementById("websiteLink");
   const messengerLinks = document.querySelectorAll(".js-open-messenger");

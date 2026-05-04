@@ -243,7 +243,8 @@
                         <div class="form-step">
                             <p class="form-step-title"><span class="form-step-number">1</span>Let&#39;s start with a few details</p>
                             <div class="form-grid">
-                                <input type="text" name="fullName" placeholder="Your Name" aria-label="Your Name" required>
+                                <input type="text" name="firstName" placeholder="First Name" aria-label="First Name" required>
+                                <input type="text" name="lastName" placeholder="Last Name" aria-label="Last Name" required>
                                 <input type="email" name="email" placeholder="Email Address" aria-label="Email Address" required>
                                 <div class="mobile-input-field">
                                     <span class="mobile-input-label">Mobile phone number</span>
@@ -260,14 +261,20 @@
                             <label class="form-field-label" for="businessType">What kind of business do you run, and who are your typical customers?<span class="required-mark">*</span></label>
                             <input id="businessType" type="text" name="businessType" placeholder="e.g., fitness coach for busy professionals, salon for moms, etc." required>
 
-                            <label class="form-field-label" for="hasLandingPage">Do you currently have a live landing page?<span class="required-mark">*</span></label>
-                            <div class="select-field">
-                                <select id="hasLandingPage" name="hasLandingPage" required>
-                                    <option value="" selected disabled>Select your answer...</option>
-                                    <option value="Yes - but I feel it can be improved">Yes - but I feel it can be improved</option>
-                                    <option value="Yes - and I'm not sure if it's working well">Yes - and I am not sure if it is working well</option>
-                                    <option value="No - I don't have one yet">No - I do not have one yet</option>
-                                </select>
+                            <label class="form-field-label">Do you currently have a website or landing page?<span class="required-mark">*</span></label>
+                            <div class="radio-group" id="hasLandingPage" role="radiogroup">
+                                <label class="radio-option">
+                                    <input type="radio" name="hasLandingPage" value="Yes - but I feel it can be improved" required>
+                                    <span>Yes &#8211; <em>but I feel it can be improved</em></span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="hasLandingPage" value="Yes - and I'm not sure if it's working well">
+                                    <span>Yes &#8211; <em>and I&#39;m not sure if it&#39;s working well</em></span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="hasLandingPage" value="No - I don't have one yet">
+                                    <span>No &#8211; <em>I don&#39;t have one yet</em></span>
+                                </label>
                             </div>
 
                             <div id="websiteLinkField" class="conditional-field is-hidden" hidden>
@@ -275,7 +282,7 @@
                                 <input id="websiteLink" type="url" name="websiteLink" placeholder="https://yourwebsite.com">
                             </div>
 
-                            <label class="form-field-label" for="mainGoal">What are you focused right now?<span class="required-mark">*</span></label>
+                            <label class="form-field-label" for="mainGoal">What would you like your website to help you achieve right now?<span class="required-mark">*</span></label>
                             <div class="select-field">
                                 <select id="mainGoal" name="mainGoal" required>
                                     <option value="" selected disabled>Select your main goal...</option>
@@ -289,7 +296,7 @@
                             <label class="form-field-label" for="biggestBlocker">What do you feel might be stopping customers from reaching out or booking right now?<span class="required-mark">*</span></label>
                             <div class="select-field">
                                 <select id="biggestBlocker" name="biggestBlocker" required>
-                                    <option value="" selected disabled>e.g., unclear offer, not enough inquiries, not sure</option>
+                                    <option value="" selected disabled>e.g., unclear offer, not enough inquiries, low conversions, not sure</option>
                                     <option value="Unclear offer or messaging">Unclear offer or messaging</option>
                                     <option value="Not enough inquiries">Not enough inquiries</option>
                                     <option value="Low conversion rate">Low conversion rate</option>
