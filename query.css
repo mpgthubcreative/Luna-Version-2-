@@ -2,13 +2,13 @@
 @media (min-width: 768px){
 
 .container{
-    max-width: 1400px;
+    max-width: 768px;
 }
 
 /* Header */
 .header-container{
     padding: 1rem 4rem;
-    background-color: #FBFBFD;
+    background: transparent;
     width: 768px;
 }
 
@@ -19,7 +19,7 @@
 
 /* Hero */
 .hero-section{
-    background-color: #FBFBFD;
+    background: transparent;
 }
 
 .hero-container{
@@ -104,51 +104,61 @@
 /* Process */
 .process-container{
     padding: 0 4rem;
-    max-width: 100rem;
     margin: 0 auto;
 }
 
 .process-tagline{
-    font-size: 2.4rem;
-    max-width: 70rem;
+    padding: 0;
+    font-size: 2rem;
+    width: 54rem;
     margin: 0 auto 3.5rem;
 }
 
 .process-grid{
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    overflow-x: visible;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.process-card{
+    flex: 0 0 18rem;
+    width: 18rem;
+    height: 23rem;
+    scroll-snap-align: none;
 }
 
 .process-card:last-child{
     grid-column: auto;
-    max-width: none;
+    max-width: 18rem;
     margin: 0;
+    padding-right: 0;
+    box-sizing: border-box;
 }
 
-.process-card:nth-child(4),
-.process-card:nth-child(5){
-    grid-column: span 1;
-}
-
-/* center last two on a second row of 3 grid */
 .process-card:nth-child(4){
-    grid-column: 1 / 2;
-    margin-left: auto;
+    grid-column: auto;
+    margin-left: 0;
     margin-right: 0;
-    max-width: 26rem;
-    width: 100%;
+
 }
 
 .process-card:nth-child(5){
-    grid-column: 2 / 3;
+    grid-column: auto;
     margin-left: 0;
-    margin-right: auto;
-    max-width: 26rem;
-    width: 100%;
+    margin-right: 0;
+
 }
 
 .process-card__img{
-    height: 20rem;
+    height: 16rem;
+}
+
+.process-dots{
+    display: none;
 }
 
 /* Features */
@@ -156,31 +166,40 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    padding: 0 4rem;
+    padding:0rem;
     gap: 0;
-    max-width: 80rem;
+    max-width: 77rem;
     margin: 0 auto;
 }
 
 .feature-item{
     flex: 1;
-    padding: 0 3rem;
+    padding: 0 2rem;
 }
 
 .feature-divider{
-    width: 1px;
-    height: 6rem;
+    width: .5px;
+    height: 10rem;
+    color: #000;
     align-self: center;
 }
 
 .feature-item__title{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+}
+
+.process-card__desc{
+    font-size: .9rem;
+}
+
+.feature-item__desc{
+    font-size: .9rem;
 }
 
 /* Pitch */
 .pitch-container{
-    padding: 0 4rem;
-    max-width: 80rem;
+    padding: 0rem;
+    width: 54rem;
     margin: 0 auto;
 }
 
@@ -206,7 +225,7 @@
 
 .form-layout{
     grid-template-columns: 1fr 1fr;
-    gap: 2.4rem;
+    gap: 0rem;
     align-items: start;
     max-width: 90rem;
     margin: 0 auto;
@@ -214,6 +233,7 @@
 
 .form-benefits-card{
     padding: 2.4rem 2.2rem 2rem;
+    border-radius: 0rem 0rem 11px 11px;
 }
 
 .form-benefits-title{
@@ -232,6 +252,7 @@
 
 .lead-form{
     padding: 2.2rem 1.8rem 2rem;
+    border-radius: 0rem 0rem 11px 11px;
 }
 
 }

@@ -60,6 +60,18 @@ function scheduleTrackingLoad() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Process cards scroll dots
+  const grid = document.querySelector(".process-grid");
+  const dots = document.querySelectorAll(".process-dot");
+
+  if (grid && dots.length) {
+    grid.addEventListener("scroll", () => {
+      const cardWidth = grid.querySelector(".process-card").offsetWidth + 16; // 16 = gap (1.6rem at 10px base)
+      const index = Math.round(grid.scrollLeft / cardWidth);
+      dots.forEach((d, i) => d.classList.toggle("active", i === index));
+    }, { passive: true });
+  }
+
   const hasWebsiteSelect = document.getElementById("hasLandingPage");
   const hasWebsiteRadios = document.querySelectorAll('input[name="hasWebsite"]');
   const websiteLinkField = document.getElementById("websiteLinkField");

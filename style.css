@@ -19,6 +19,7 @@ body{
 .container{
     max-width: 43rem;
     margin: 0 auto;
+    border: solid 1px black;
 }
 
 /* ── HEADER ── */
@@ -27,7 +28,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2.4rem;
-    background-color: #fff;
+    background: transparent;
 }
 
 .top-logo{
@@ -38,7 +39,7 @@ body{
 
 /* ── HERO SECTION ── */
 .hero-section{
-    background-color: #fff;
+    background: transparent;
 }
 
 .hero-container{
@@ -174,44 +175,61 @@ body{
 
 /* ── PROCESS SECTION ── */
 .process-section{
-    background-color: #fff;
+    background: transparent;
     padding: 3.5rem 0 3rem;
 }
 
 .process-container{
-    padding: 0 2.4rem;
+    padding: 0;
 }
 
 .process-tagline{
-    font-size: 1.8rem;
-    line-height: 1.4;
+
+    font-size:2rem;
+    line-height: 1.5;
     text-align: center;
     color: #111;
     margin-bottom: 3rem;
+    padding: 0 3.3rem;
 }
 
 .process-tagline span{
     color: #FF4B00;
     font-weight: 800;
+    background-color: #FDEBDF;
 }
 
 .process-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1.6rem;
+    scrollbar-width: none;
+    margin-left: 3rem;
 }
 
-/* last card (5th) centered on mobile */
+.process-grid::-webkit-scrollbar{
+    display: none;
+}
+
+.process-card{
+    flex: 0 0 27rem;
+    width: 27rem;
+    height: 34rem;
+    scroll-snap-align: start;
+    border: solid 1px #D9D9D9;
+    border-radius: 11px;
+}
+
 .process-card:last-child{
-    grid-column: 1 / -1;
-    max-width: 19rem;
-    margin: 0 auto;
-    width: 100%;
+    padding-right: 3rem;
+    box-sizing: content-box;
 }
 
 .process-card__img{
     width: 100%;
-    height: 16rem;
+    height: 24rem;
     object-fit: cover;
     display: block;
     border-radius: .8rem;
@@ -233,9 +251,31 @@ body{
     text-align: center;
 }
 
+/* Scroll dots */
+.process-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    padding: 1.6rem 0 .5rem;
+}
+
+.process-dot{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #ddd;
+    transition: background-color 0.25s ease;
+    flex-shrink: 0;
+}
+
+.process-dot.active{
+    background-color: #aaa;
+}
+
 /* ── FEATURES SECTION ── */
 .features-section{
-    background-color: #F5F0E8;
+    background: linear-gradient(90deg, #FEF8F1 0%, #FDECE1 100%);
     padding: 3rem 0;
 }
 
@@ -253,55 +293,57 @@ body{
 }
 
 .feature-item__title{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
     color: #FF4B00;
     margin-bottom: .5rem;
 }
 
 .feature-item__desc{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #444;
     line-height: 1.45;
+    width: 18rem;
+    margin: 0 auto;
 }
 
 .feature-divider{
-    width: 4rem;
+    width: 8rem;
     height: 1px;
-    background-color: #ccc;
+    background-color: #000;
 }
 
 /* ── PITCH SECTION ── */
 .pitch-section{
-    background-color: #fff;
-    padding: 4rem 0;
+    background: transparent;
+    padding: 3rem 0 2rem 0 ; 
 }
 
 .pitch-container{
-    padding: 0 2.4rem;
+    padding: 0 3rem;
 }
 
 .pitch-text{
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     line-height: 1.6;
     text-align: center;
     color: #111;
 }
 
 .pitch-text mark{
-    background-color: #FFD9C4;
-    color: #111;
+    background-color: #FF4B00;
+    color: #fff;
     padding: 0 .3rem;
 }
 
 /* ── FORM SECTION ── */
 .form{
-    background-color: #F5F0E8;
-    padding: 3.5rem 0 4rem;
+    background: transparent;
+    padding: 2rem 0 4rem;
 }
 
 .form-container{
-    padding: 0 1.6rem;
+    padding: 0 3rem;
 }
 
 .form-header{
@@ -352,8 +394,15 @@ body{
     background: linear-gradient(180deg, #fff7ef 0%, #fff1e6 100%);
     border: 1px solid #f0dfd0;
     border-radius: 1.6rem;
-    padding: 2rem 1.8rem 1.8rem;
+    padding: 4rem 3rem;
     box-shadow: 0 8px 24px rgba(41, 34, 23, 0.07);
+}
+
+.form-benefits-note{
+    font-size: 1rem;
+    color: #3b3b3b;
+    text-align: center;
+    padding: 1.2rem 0 .4rem;
 }
 
 .form-benefits-title{
@@ -428,41 +477,42 @@ body{
 
 .testimonial-card{
     display: flex;
-    align-items: flex-start;
-    gap: 1.1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: #fff;
     border: 1px solid #e2d8cf;
-    border-radius: 1rem;
-    padding: 1.2rem 1.2rem;
+    border-radius: 1.2rem;
+    padding: 2rem 3.8rem;
     box-shadow: 0 4px 14px rgba(62, 42, 14, 0.06);
 }
 
 .testimonial-avatar{
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     object-fit: cover;
-    flex-shrink: 0;
+    margin-bottom: 1rem;
 }
 
 .testimonial-stars{
     color: #FF4B00;
-    font-size: .95rem;
+    font-size: 2rem;
     letter-spacing: .1em;
-    margin-bottom: .3rem;
+    margin-bottom: .6rem;
 }
 
 .testimonial-quote{
-    font-size: 1.1rem;
-    line-height: 1.45;
+    font-size: 1.3rem;
+    line-height: 1.5;
     color: #1f1f1f;
     font-style: italic;
     font-weight: 600;
+    margin-bottom: .5rem;
 }
 
 .testimonial-name{
-    margin-top: .3rem;
-    font-size: .9rem;
+    font-size: .95rem;
     color: #6a6a6a;
 }
 
