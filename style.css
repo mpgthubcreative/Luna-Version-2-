@@ -19,7 +19,7 @@ body{
 .container{
     max-width: 43rem;
     margin: 0 auto;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 /* ── HEADER ── */
