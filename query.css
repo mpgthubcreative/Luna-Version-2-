@@ -207,6 +207,87 @@
     font-size: 2.2rem;
 }
 
+/* Pricing */
+.cd-br{ display: inline; }
+
+.pricing-countdown{
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 1.8rem 12rem;
+    gap: 2rem;
+}
+
+.countdown-label-main{
+    font-size: 2rem;
+}
+
+.countdown-label-sub{
+    margin-bottom: 0;
+    font-size: .6rem;
+     letter-spacing: 1.89px;
+}
+
+.countdown-units{
+    flex: 1;
+    justify-content: flex-end;
+    gap: 2rem;
+    width: auto;
+}
+
+.countdown-val{
+    font-size: 3rem;
+}
+
+.pricing-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    overflow-x: visible;
+    padding: 3rem 2rem 2.5rem;
+}
+
+.pricing-card{
+    flex: 0 0 23rem;
+    width: 23rem;
+    scroll-snap-align: none;
+}
+
+.pricing-card-inner{
+    padding: 7rem 1.4rem 2rem;
+}
+
+.pricing-card-title{
+    font-size: 2rem;
+}
+
+.pricing-card-sub{
+    font-size: 1.1rem;
+}
+
+.pricing-price{
+    font-size: 3rem;
+}
+
+.pricing-og-price{
+    font-size: 1.3rem;
+}
+
+.pricing-off-badge{
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.1rem;
+}
+
+.pricing-features li{
+    font-size: 1.1rem;
+}
+
+.pricing-support-note{
+    padding: 0 2rem 1rem;
+}
+
 /* Form */
 .form-container{
     max-width: 100rem;
@@ -216,6 +297,7 @@
 
 .form-title{
     font-size: 2.8rem;
+    width: auto;
 }
 
 .form-subtitle{
@@ -475,7 +557,41 @@
     font-size: 2.7rem;
 }
 
-/* Form */
+/* Pricing */
+.pricing-countdown{
+    padding: 2rem 16rem;
+}
+
+.countdown-label-main{
+    font-size: 3.1rem;
+}
+
+.countdown-label-sub{
+    font-size: .8rem;
+    letter-spacing: 3.52px;
+}
+
+.countdown-units{
+    gap: 2.5rem;
+}
+
+.countdown-val{
+    font-size: 3.4rem;
+}
+
+.pricing-cards{
+    padding: 3rem 4rem 2.5rem;
+}
+
+.pricing-card{
+    flex: 0 0 30rem;
+    width: 30rem;
+}
+
+.pricing-card-inner{
+    padding: 7rem 2rem 2.5rem;
+}
+
 .form-container{
     max-width: 100rem;
     margin: 0 auto;
@@ -748,6 +864,69 @@ font-size: 1.3rem;
 
 .pitch-text{
     font-size: 3.1rem;
+}
+
+/* Pricing */
+.pricing-countdown{
+    padding: 2.2rem 20rem;
+}
+
+.countdown-label-main{
+    font-size: 3.7rem;
+}
+
+.countdown-label-sub{
+       font-size: 1.1rem;
+       letter-spacing: 3.5px;
+}
+
+.countdown-units{
+    gap: 3rem;
+}
+
+.countdown-val{
+    font-size: 4.5rem;
+}
+
+.pricing-cards{
+    padding: 3rem 5rem 2.5rem;
+}
+
+.pricing-card-title{
+    font-size: 3rem;
+}
+
+.pricing-card-sub{
+    width: 20rem;
+    font-size: 1rem;
+    margin: 0 auto 1rem;
+}
+
+.pricing-card{
+    flex: 0 0 34rem;
+    width: 34rem;
+}
+
+.pricing-card-inner{
+    padding: 7rem 2rem 2.5rem;
+}
+
+.pricing-price{
+    font-size: 3rem;
+}
+
+.pricing-og-price{
+    font-size: 1.9rem;
+}
+
+.pricing-off-badge{
+    font-size: 2rem;
+        width: 8rem;
+    height: 8rem;
+}
+
+.pricing-support-note{
+    padding: 0 5rem 1rem;
 }
 
 /* Form */
@@ -1043,6 +1222,63 @@ font-size: 1.6rem;
 
 .pitch-text{
     font-size: 3.7rem;
+}
+
+/* Pricing */
+.pricing-countdown{
+    padding: 2.4rem 22rem;
+}
+
+.countdown-label-main{
+    font-size: 3.7rem;
+}
+
+.countdown-label-sub{
+       font-size: 1.1rem;
+       letter-spacing: 3.4px;
+}
+
+.countdown-units{
+    gap: 3.5rem;
+}
+
+.countdown-val{
+    font-size: 4.5rem;
+}
+
+.pricing-cards{
+    padding: 3rem 6rem 2.5rem;
+}
+
+.pricing-card{
+    flex: 0 0 41rem;
+    width: 39rem;
+}
+
+.pricing-card-sub{
+    width: 22rem;
+    margin: 0 auto 1rem;
+    font-size: 1.2rem;
+}
+
+.pricing-card-inner{
+    padding: 7rem 2rem 2.5rem;
+}
+
+.pricing-support-note{
+    padding: 0 6rem 1rem;
+}
+
+.pricing-card-title{
+    font-size: 3.6rem;
+}
+.pricing-price{
+    font-size: 4rem;
+}
+.pricing-off-badge{
+    width: 8rem;
+    height: 8rem;
+    font-size: 2rem;
 }
 
 /* Form */

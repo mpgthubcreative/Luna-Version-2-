@@ -60,6 +60,33 @@ function scheduleTrackingLoad() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Countdown timer
+  const cdEnd = new Date("2026-06-30T23:59:59");
+  const cdDays = document.getElementById("cd-days");
+  const cdHours = document.getElementById("cd-hours");
+  const cdMinutes = document.getElementById("cd-minutes");
+  const cdSeconds = document.getElementById("cd-seconds");
+
+  if (cdDays && cdHours && cdMinutes && cdSeconds) {
+    const pad = (n) => String(n).padStart(2, "0");
+    const updateCountdown = () => {
+      const diff = cdEnd - new Date();
+      if (diff <= 0) {
+        cdDays.textContent = "00";
+        cdHours.textContent = "00";
+        cdMinutes.textContent = "00";
+        cdSeconds.textContent = "00";
+        return;
+      }
+      cdDays.textContent = pad(Math.floor(diff / 86400000));
+      cdHours.textContent = pad(Math.floor((diff % 86400000) / 3600000));
+      cdMinutes.textContent = pad(Math.floor((diff % 3600000) / 60000));
+      cdSeconds.textContent = pad(Math.floor((diff % 60000) / 1000));
+    };
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  }
+
   // Process cards scroll dots
   const grid = document.querySelector(".process-grid");
   const dots = document.querySelectorAll(".process-dot");

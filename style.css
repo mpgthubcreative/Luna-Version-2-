@@ -338,6 +338,269 @@ body{
     padding: 0 .3rem;
 }
 
+/* ── PRICING SECTION ── */
+.pricing-section{
+    padding: 0 0 0rem;
+}
+
+/* Countdown banner */
+.cd-br{ display: none; }
+
+.pricing-countdown{
+    background-color: #FF4B00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2.4rem 2.2rem;
+    gap: 0;
+}
+
+.countdown-label{
+    flex-shrink: 0;
+}
+
+.countdown-label-main{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.15;
+    text-transform: uppercase;
+    margin-bottom: .3rem;
+}
+
+.countdown-label-sub{
+    font-size: 1rem;
+    color: rgba(255,255,255,.9);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.countdown-units{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.countdown-unit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-val{
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+}
+
+.countdown-unit-lbl{
+    font-size: .68rem;
+    color: rgba(255,255,255,.9);
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    margin-top: .3rem;
+}
+
+/* Pricing cards */
+.pricing-cards{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1.6rem;
+    padding: 3rem 2.4rem 2.5rem;
+    scrollbar-width: none;
+}
+
+.pricing-cards::-webkit-scrollbar{
+    display: none;
+}
+
+.pricing-card{
+    flex: 0 0 28rem;
+    width: 28rem;
+    scroll-snap-align: start;
+    background: #fff;
+    border: 1.5px solid #ddd;
+    border-radius: 1rem;
+    position: relative;
+    overflow: visible;
+}
+
+/* Flash Sale ribbon */
+.pricing-ribbon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    border-radius: 1rem 1rem 0 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.pricing-ribbon span{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+    width: 100%;
+    background: #FF4B00;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding: 1rem 1.5rem;
+    transform: none;
+    line-height: 1.2;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+}
+
+.pricing-ribbon span small{
+    display: block;
+    font-size: .95rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    margin-top: 0;
+    text-transform: uppercase;
+    opacity: .85;
+}
+
+.pricing-card-inner{
+    padding: 7rem 2rem 2.5rem;
+}
+
+.pricing-card-title{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #111;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: .6rem;
+    line-height: 1.2;
+}
+
+.pricing-card-sub{
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: .8rem;
+}
+
+.pricing-avail{
+    font-size: 1rem;
+    color: #FF4B00;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+.pricing-price-row{
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.pricing-off-badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FF4B00;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: center;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    flex-shrink: 0;
+    letter-spacing: .02em;
+}
+
+.pricing-price-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .2rem;
+}
+
+.pricing-price{
+    font-size: 3.8rem;
+    font-weight: 900;
+    color: #111;
+    line-height: 1;
+}
+
+.pricing-og-price{
+    font-size: 1.6rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.pricing-hr{
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 1.2rem 0;
+}
+
+.pricing-features-heading{
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #111;
+    margin-bottom: 1rem;
+    letter-spacing: .04em;
+}
+
+.pricing-features{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .65rem;
+}
+
+.pricing-features li{
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.4;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.pricing-features li:first-child{
+    font-weight: 700;
+    color: #111;
+}
+
+.pricing-features li::before{
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #111;
+    font-weight: 700;
+}
+
+.pricing-support-note{
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+    line-height: 1.55;
+    font-style: italic;
+    padding: 0 2.4rem 1rem;
+}
+
 /* ── FORM SECTION ── */
 .form{
     background: transparent;
@@ -371,6 +634,8 @@ body{
     font-weight: 800;
     color: #111;
     margin-bottom: .8rem;
+    width: 28rem;
+    margin: 0 auto .8rem;
 }
 
 .form-title span{
