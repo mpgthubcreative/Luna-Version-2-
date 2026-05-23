@@ -225,7 +225,7 @@ body{
 }
 
 .process-card:last-child{
-    padding-right: 3rem;
+    padding-right: 0rem;
     box-sizing: content-box;
 }
 
