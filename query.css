@@ -1,4 +1,4 @@
-﻿/* ── TABLET / DESKTOP (768px+) ── */
+/* -- TABLET / DESKTOP (768px+) -- */
 @media (min-width: 768px){
 
 .container{
@@ -288,6 +288,11 @@
     padding: 0 2rem 1rem;
 }
 
+.pitch-section{
+    padding: 3rem;
+}
+
+
 /* Form */
 .form-container{
     max-width: 100rem;
@@ -337,9 +342,14 @@
     border-radius: 0rem 0rem 11px 11px;
 }
 
+.pricing-card-sub{
+    font-size: 1rem;
 }
 
-/* ── LARGE DESKTOP (1024px+) ── */
+
+}
+
+/* -- LARGE DESKTOP (1024px+) -- */
 @media (min-width: 1024px){
 .container{
     max-width: 1024px;
@@ -644,10 +654,15 @@ font-size: 1.3rem;
     border-radius: 0rem 0rem 11px 11px;
 }
 
+.pricing-card-sub{
+    font-size: 1.3rem;
 }
 
 
-/* ── LARGE DESKTOP (1200px+) ── */
+}
+
+
+/* -- LARGE DESKTOP (1200px+) -- */
 @media (min-width: 1200px){
 
     
@@ -897,8 +912,8 @@ font-size: 1.3rem;
 }
 
 .pricing-card-sub{
-    width: 20rem;
-    font-size: 1rem;
+    width: 27rem;
+    font-size: 1.4rem;
     margin: 0 auto 1rem;
 }
 
@@ -964,7 +979,7 @@ font-size: 1.3rem;
 }
 
 .form-benefits-card{
-    padding: 3rem 5rem;
+    padding: 3rem 3rem;
     border-radius: 0rem 0rem 11px 11px;
 }
 
@@ -1001,10 +1016,11 @@ font-size: 1.6rem;
 }
 
 
+
 }
 
 
-/* ── LARGE DESKTOP (1200px+) ── */
+/* -- LARGE DESKTOP (1200px+) -- */
 @media (min-width: 1400px){
 
     
@@ -1256,9 +1272,9 @@ font-size: 1.6rem;
 }
 
 .pricing-card-sub{
-    width: 22rem;
+    width: 28rem;
     margin: 0 auto 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .pricing-card-inner{
@@ -1316,7 +1332,7 @@ font-size: 1.6rem;
 }
 
 .form-benefits-card{
-    padding: 3rem 5rem;
+    padding: 3rem 3rem;
     border-radius: 0rem 0rem 11px 11px;
 }
 

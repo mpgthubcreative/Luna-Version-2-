@@ -674,6 +674,7 @@ body{
 
 .form-benefits-title{
     font-size: 2rem;
+    font-weight: 800;
     line-height: 1.2;
     color: #111;
     margin-bottom: 1rem;
@@ -684,44 +685,51 @@ body{
 }
 
 .form-benefits-intro{
-    font-size: 1.2rem;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    line-height: 1.55;
     color: #3b3b3b;
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.6rem;
+    text-align: center;
+}
+
+.form-benefits-highlight{
+    background-color: #FF4B00;
+    color: #fff;
+    padding: 0 .2em;
+    border-radius: .2rem;
 }
 
 .form-benefits-list{
     list-style: none;
     display: grid;
-    gap: 1.1rem;
+    gap: .6rem;
     margin-bottom: 2rem;
 }
 
 .form-benefits-list li{
     display: grid;
-    grid-template-columns: 1.8rem 1fr;
-    gap: .7rem;
-    align-items: start;
+    grid-template-columns: 2.4rem 1fr;
+    gap: .5rem;
+    align-items: center;
 }
 
 .form-benefit-icon{
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.7rem;
+    height: 1.7rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background-color: #FF4B00;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     flex-shrink: 0;
-    margin-top: .2rem;
 }
 
 .form-benefits-list p{
     margin: 0;
-    font-size: 1.15rem;
+    font-size: 1rem;
 }
 
 .form-benefits-list p + p{
@@ -732,7 +740,8 @@ body{
 
 .form-benefits-list strong{
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
     color: #111;
 }
 
@@ -750,7 +759,7 @@ body{
     background-color: #fff;
     border: 1px solid #e2d8cf;
     border-radius: 1.2rem;
-    padding: 2rem 3.8rem;
+    padding: 2rem 2.2rem;
     box-shadow: 0 4px 14px rgba(62, 42, 14, 0.06);
 }
 
@@ -764,13 +773,13 @@ body{
 
 .testimonial-stars{
     color: #FF4B00;
-    font-size: 2rem;
+    font-size: 1.6rem;
     letter-spacing: .1em;
-    margin-bottom: .6rem;
+    margin-bottom: .5rem;
 }
 
 .testimonial-quote{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     color: #1f1f1f;
     font-style: italic;
